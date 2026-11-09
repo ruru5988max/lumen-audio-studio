@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#080a12" />
+  <meta name="description" content="LUMEN — 音楽のビートと周波数に反応するシネマティックな3D音楽ビジュアライザー" />
+  <title>LUMEN — Audio Visual Studio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Lumen Studio ホーム"><span class="brand-logo"><span></span></span><span>LUMEN<small>STUDIO</small></span></a>
+      <div class="topbar-center"><span class="top-separator"></span><span class="project-name">NEON SPECTRUM</span><span class="version-chip">V1.0</span></div>
+      <div class="top-actions"><span class="system-dot"></span><span class="system-status" id="system-status">WEBGL CHECK</span><button class="help-btn" id="help-button" aria-label="使い方" title="使い方">?</button></div>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="side-header"><div class="eyebrow">YOUR CREATIVE SPACE</div><h1>音を、<br/><em>映像作品</em>に。</h1><p>ビートが光を動かし、メロディが空間を染める。</p></div>
+
+        <section class="panel">
+          <div class="panel-title"><span class="panel-index">01</span> AUDIO SOURCE <span class="panel-subtitle">音源</span></div>
+          <label class="dropzone" id="dropzone" for="file-input" tabindex="0">
+            <input type="file" accept="audio/*,.mp3,.wav,.m4a,.aac,.ogg,.flac" id="file-input" hidden />
+            <span class="drop-visual"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 5v17m0-17 6 6m-6-6-6 6"/><path d="M6 22v3a3 3 0 003 3h16a3 3 0 003-3v-3"/></svg></span>
+            <strong id="drop-title">音楽ファイルを追加</strong>
+            <small id="drop-subtitle">タップして選択 / ここにドロップ</small>
+            <span class="file-pill">MP3 · WAV · M4A · その他</span>
+          </label>
+          <div class="file-info hidden" id="file-info"><div class="file-info-icon">♫</div><div class="file-info-text"><strong id="track-name">—</strong><small id="track-meta">解析中</small></div><button type="button" id="remove-file" class="icon-button" aria-label="音源を削除">×</button></div>
+          <div class="tiny-note">音源は端末内で処理されます。アップロードしません。</div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title"><span class="panel-index">02</span> COLOR ATMOSPHERE <span class="panel-subtitle">色彩</span></div>
+          <div class="palette-list" role="radiogroup" aria-label="カラーパレット">
+            <button class="palette-option selected" data-palette="aurora" role="radio" aria-checked="true"><span class="palette-preview aurora"></span><span><strong>Neon Aurora</strong><small>Electric pink / Cyan</small></span><span class="palette-check">✓</span></button>
+            <button class="palette-option" data-palette="ember" role="radio" aria-checked="false"><span class="palette-preview ember"></span><span><strong>Solar Flare</strong><small>Amber / Magenta</small></span><span class="palette-check">✓</span></button>
+            <button class="palette-option" data-palette="glacier" role="radio" aria-checked="false"><span class="palette-preview glacier"></span><span><strong>Arctic Pulse</strong><small>Ice blue / Violet</small></span><span class="palette-check">✓</span></button>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title"><span class="panel-index">03</span> MOTION DESIGN <span class="panel-subtitle">演出</span></div>
+          <div class="range-block"><div class="range-label"><label for="intensity">リアクションの強さ</label><output id="intensity-value">75%</output></div><input type="range" id="intensity" min="30" max="160" value="75" /><div class="range-foot"><span>SUBTLE</span><span>EXPLOSIVE</span></div></div>
+          <div class="range-block"><div class="range-label"><label for="glow">ネオンの発光</label><output id="glow-value">80%</output></div><input type="range" id="glow" min="20" max="150" value="80" /><div class="range-foot"><span>SOFT</span><span>RADIANT</span></div></div>
+          <div class="range-block"><div class="range-label"><label for="particles">粒子の密度</label><output id="particles-value">70%</output></div><input type="range" id="particles" min="0" max="100" value="70" /><div class="range-foot"><span>MINIMAL</span><span>DENSE</span></div></div>
+        </section>
+      </aside>
+
+      <main class="main-panel">
+        <div class="stage-top"><div><span class="stage-eyebrow">LIVE GENERATIVE CANVAS</span><h2>Neon Spectrum <span>01 / 01</span></h2></div><div class="stage-top-meta"><span class="live-led"></span><span id="live-label">DEMO MOTION</span></div></div>
+        <div class="stage-shell">
+          <div class="stage-frame ratio-portrait" id="stage-frame">
+            <canvas id="visualizer" aria-label="音楽に反応するリアルタイムビジュアライザー"></canvas>
+            <div class="stage-ui"><div class="stage-corner top-left"></div><div class="stage-corner top-right"></div><div class="stage-corner bottom-left"></div><div class="stage-corner bottom-right"></div></div>
+            <div class="stage-bottom-caption" id="stage-caption"><span class="caption-light"></span> AUDIO REACTIVE ENGINE <span>●</span> NEON SPECTRUM</div>
+            <div class="stage-toast" id="stage-toast" aria-live="polite"></div>
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-top"><span class="player-title" id="player-title">音源を読み込むと同期します</span><span class="player-time"><span id="current-time">00:00</span> <span class="player-time-separator">/</span> <span id="duration">00:00</span></span></div>
+          <div class="timeline" id="timeline"><canvas id="waveform" aria-hidden="true"></canvas><div class="timeline-played" id="timeline-played"></div><input id="seek" type="range" min="0" max="1000" value="0" aria-label="再生位置" disabled /></div>
+          <div class="transport"><div class="transport-left"><button type="button" class="transport-button" id="restart" title="最初に戻す" aria-label="最初に戻す"><svg viewBox="0 0 24 24"><path d="M5 4v16M19 5L7 12l12 7V5z"/></svg></button><button type="button" class="play-button" id="play" title="再生 / 停止" aria-label="再生" disabled><svg id="play-symbol" viewBox="0 0 24 24"><path d="M8 5.5l10.5 6.5L8 18.5v-13z"/></svg></button><button type="button" class="transport-button" id="mute" title="音量オン / オフ" aria-label="ミュート"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zm13-2a7 7 0 010 10m2-13a11 11 0 010 16"/></svg></button></div><div class="transport-right"><span class="transport-hint" id="player-status">READY FOR AUDIO</span><span class="rate-pill">1.0×</span></div></div>
+        </div>
+      </main>
+
+      <aside class="rightbar">
+        <section class="right-section"><div class="panel-title"><span class="panel-index">04</span> FORMAT <span class="panel-subtitle">比率</span></div><div class="aspect-grid"><button class="aspect selected" data-aspect="9:16" aria-pressed="true"><span class="aspect-icon portrait"></span><b>9:16</b><small>TIKTOK</small></button><button class="aspect" data-aspect="16:9" aria-pressed="false"><span class="aspect-icon landscape"></span><b>16:9</b><small>YOUTUBE</small></button><button class="aspect" data-aspect="1:1" aria-pressed="false"><span class="aspect-icon square"></span><b>1:1</b><small>SQUARE</small></button></div></section>
+
+        <section class="right-section"><div class="panel-title"><span class="panel-index">05</span> AUDIO RESPONSE <span class="panel-subtitle">音響</span></div><div class="meter-item"><div class="meter-head"><span>BASS <small>LOW</small></span><span id="bass-value">0%</span></div><div class="meter-track"><div id="bass-meter" class="meter-fill bass"></div></div></div><div class="meter-item"><div class="meter-head"><span>MID <small>MELODY</small></span><span id="mid-value">0%</span></div><div class="meter-track"><div id="mid-meter" class="meter-fill mid"></div></div></div><div class="meter-item"><div class="meter-head"><span>TREBLE <small>HIGH</small></span><span id="treble-value">0%</span></div><div class="meter-track"><div id="treble-meter" class="meter-fill treble"></div></div></div><div class="beat-row"><span class="beat-pip" id="beat-pip"></span><span>BEAT DETECTION</span><b id="bpm-value">— BPM</b></div></section>
+
+        <section class="right-section export-section"><div class="panel-title"><span class="panel-index">06</span> RENDER & EXPORT <span class="panel-subtitle">保存</span></div><label for="render-size" class="select-label">書き出し解像度</label><select id="render-size" class="dark-select"><option value="720">HD — 720p</option><option value="1080" selected>FULL HD — 1080p</option><option value="2160">4K — 2160p (高負荷)</option></select><label for="render-duration" class="select-label">映像の長さ</label><select id="render-duration" class="dark-select"><option value="15">15 seconds</option><option value="30" selected>30 seconds</option><option value="60">60 seconds</option><option value="full">FULL TRACK</option></select><label for="render-fps" class="select-label">フレームレート</label><select id="render-fps" class="dark-select"><option value="30" selected>30 FPS</option><option value="60">60 FPS</option></select><button class="render-button" id="export-button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg><span id="export-label">EXPORT VIDEO</span></button><div class="export-progress hidden" id="export-progress"><div id="export-progress-bar"></div></div><p class="export-note" id="export-note">MP4対応ブラウザではMP4、その他ではWebM形式で保存されます。</p></section>
+
+        <section class="info-section"><div class="info-icon">✦</div><div><strong>100% PROCEDURAL</strong><p>プリレンダ素材ではなく、すべてをGPUでその場で描画。字幕・ロゴのない映像が書き出されます。</p></div></section>
+      </aside>
+    </div>
+    <footer class="footer"><span>© LUMEN STUDIO · AUDIO → ART</span><span>RENDER ENGINE <strong>WEBGL 2.0</strong><span class="footer-dot">·</span><strong>LOCAL PROCESSING</strong></span></footer>
+  </div>
+  <audio id="audio" preload="metadata"></audio>
+  <dialog id="help-dialog"><div class="dialog-inner"><button class="dialog-close" id="help-close" aria-label="閉じる">×</button><span class="eyebrow">QUICK START</span><h2>LUMENの使い方</h2><ol><li>左のパネルからMP3・WAV・M4Aなどの音楽を追加します。</li><li>再生すると低音・中音・高音に合わせて3D映像が反応します。</li><li>色・発光・粒子・縦横比を調整します。</li><li>長さと解像度を選び「EXPORT VIDEO」で音声付き動画を保存します。</li></ol><p>書き出しはリアルタイム収録です。高解像度ほど端末の性能を必要とします。スマホでは720pからお試しください。</p><button class="dialog-primary" id="help-ok">始める</button></div></dialog>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

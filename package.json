@@ -1,0 +1,12 @@
+{
+  "name": "lumen-audio-studio",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "GPU-generated, high-fidelity, local-first music visualizer",
+  "scripts": {
+    "test": "node tests/smoke.mjs",
+    "check": "node --check src/main.js && node --check src/renderer.js && node --check src/shaders.js && node --check src/audio.js && node --check src/exporter.js && node --check src/track-analysis.js",
+    "start": "python3 -m http.server 4173"
+  }
+}
