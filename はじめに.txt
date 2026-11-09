@@ -1,0 +1,10 @@
+iPhoneでLUMENを使う手順
+
+1. GitHubで新しいPublicリポジトリ「lumen-audio-studio」を作る。
+2. このZIPを解凍し、index.htmlをGitHubのルートにアップロード。
+3. Settings → Pages → Deploy from a branch → main / (root) → Save。
+4. 公開されたHTTPSのURLをiPhoneのSafariで開く。
+5. 音源を入れ、再生をタップ。
+
+※ HTMLのダウンロードリンクをiPhoneのファイルプレビューでタップしても、アプリは動作しない場合があります。
+※ 実機でのWebGL・録画検証は未完了です。

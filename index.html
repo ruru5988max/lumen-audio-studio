@@ -4,16 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#080a12" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="LUMEN" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAA6tElEQVR4nN19+3ddxZXmt288q71iOygRliw50DGDEwfLYDlYpOMnM8GWmelgLCfdgSQ9q7tD/zzzj8z8CiTdA4Ek0/GL9BosmaSRn4llgk0s0RnM4MTEDwmUVmI7i7XGzZ4fdtWuXXXqnHvuteQHG3N1zzl16tSp/Z1vf/U4dWn+xz+Fj6hRxdYsGGe+fbRs3s0uwOzbHGOimDOHb3N2sZtiHzVwkH7c4Gu6b/xRwsdHBxw3AxaZUhCAjwpEPgrguDVgYe0jApHbGxx0HZhoBVLtuVkgAr5tpcjtCo422IKSv62cas5htCg8CXSbssjtB46WYJGhFsKCeYvau/TVa5elaWIzrUcMt2WguZ3AURMWCSAcFCrPy4anotcjVDEAXL122Z7bDCi3GURuD3DUgYU6KbgwwxoEIYC2THJ2CCAAWPDvFgEhzGjOlSi5bSBCt3gPaVNYaIIsJgjUNhTq2IJ5iyIcpChpioBbGiK3LjhqwCKPiT9eu9z0xK75Pa2WZ+qDi82iBn9cCxOjpOmJtyZEbkVwVMNCjtbHRNf8nsoWb1MRU+o4Bk99cDF7pAQl1SC45SBya4GjKSwWzPtEkjqRhGLd83tLswcIKHFqlXXN78nED2OTH1xI9jDYgdgkv3rtD7cLRG4VcFR3QkSwCJiI0pcwBE19cDHa605rubfDhYYYIF3ze4pAKTAKs4a/QCQVEGm5K2WO7JYARwVhlMCiCSamPriUACJJs2zh8pBjc2MAZ6+ciXelSrRr/pLCaRFKikRSDZGbjo+bDI4KwkhgIcrO+jiJHVMfXIwQQKFbM4FCDhFZlBQpIfqqcGFErmRwInhtxBFMLZi3qAZEbjKF3ExwVBDGwnmL9HgCi4Qq5NEMe4gooMHlH7VtASrQQB1sLFu4nOMDyebZK2csSgQEFiWWSAoQ4SulTe6bRiE3DRxlyAiwAK7+22WbsgiLCkxYQPxaoWCmXrQkOiK54f9+ZuHyGCilKCmBiEux4GPa8VoGkZuDj5sDjiwyyKk2gocFPCVYWBSp4h6PCd159soZkwBF/ujr6G+1zOMzJzOcYb4pNHXvO1fOlBGJQkQTe4jw1WuXc1C4Cfi40eBoThhxHJHalO8JLJYt+qxmJDtjTARA9HWsKS9McyvzyvjM6+GoAYGghA2Szl5+S4/qTcl3C5EaUeaGQuSGgqMJMiiMTWgnZh1YnL1yJoQJj4kiIIwcpYmZU/mi5Ez8sbJjNeC8U/TQ+MzrFiUSZZYtXF4fIoFCHERuPj5uHDiyyFiYiyOee4kSWBCWLayCxaqO/my0mvj9qTiyZNIULcvt5g+vvGN1Ns3pmZNVELnyllcoDiKqVyKI+CiTg8gNwscNAkcdZCRxpIwtPCbgWYIAFGHx5swpSZIAQv6s7dwQylZJIOqHE9OH3R6Ev+rl+4RXzHmnZ07K+ep7RUmWRTJR5mbjY87BUfawJqHEDoYlyDBBRNsdDharnK4MmWcxMdC5PqtLC4XMG8cbCo4T00fU8SUoYQBCJJpS2zgKkQQfMBRSGWLmvBdkbsGRRcaCeYuESIqhpACL5cocv77ytqQVWPR19Fs2mpg5pSwi+wc61+ulE24g0InpoxUlNBbCwdrOdbDYkP3++Nj0keAtZlaN4jMpQORef4zPXj6DHIXEIYY5MxNlbvExh+DIhpIF8xZRicgoQ8bZK29LVuL5VUFp0sTMSYVLERMwsHht+hjsgUKCQtlNj6ft/PQH1nauC0rCSBFBiUIE4JUd/Zrb6ZnXPb6YgWUL70UL+ACDc9NT5irEzBU4sk9kUWRoKHnvg0uS3vVl+bhgCaPvk/2eSFJYaOBwiQkAXps+muhQ1a4ANnZvMaWtCCwM4ODkAbupclPc/GDnOnfMPMlj04ezEGHw+L+eTChEUrreMzCAxX6kJoSYUgkyV/wxJ+CoQMbVa5c9pYRWyXvNCKMeLIgIEi8C0/iLberemi1bCShi5kD0VTYPTR7wng8okehjIMJjoksqIVJGIYv9kG+gEJZ+whuEj9kHR0XDpIgMG0qWLVwOShqotKqjH25MVWDht0APpbA4YgFBwKYlg8VSKTgOTR2oKLAxBrCha4vdVKeKHZwcsW3XIkSOTx+RI+JjgYiM656eOemz8o1elg74khBTio+oSLNiswyOKmQUREYSSoT0PWGAQH2f7Jej46I3HTJooHO9vxC99rsjmq1cenP31iRQEOjQ5AEdt7fkkUpV+zXRGv6v/L+x+xEUUXJpWFOKLx/81PoIIp5CGOjrkG4SoRCXs6OQXIgpStS5xsdsgqMqmnhk6Dh7hIw0lGBVxxrfzjCEAQzcuUH9e2L6iBcRRMCm7kHPSu7ShycPBARQRCoAtvY+Xh5akl08cmGfqk7jfhcvNnY/kmjW0ckR5QMwvChhBsbePwwfOFZ29DMYjkJcZ7wNMUUJoqP/JfiYzfgy6+BoDRn3ZEKJICMljAQW3tsWFpIQhyYPBBx4/2/rfdyWzTRSKgJK0VSNYuTCXv+4B4m6QUSuh1GACDOD17qWlIOIsoWjEObTYbAmhJh3rpxpFR+3Fjja44wiMkjGSyNk0EN3bvBZUxAWFCKIHDo0NSLZWjW6benjURnNuNzIhX0FIVJqW3ofS2Wp3x6+sAcA+4AhRzZ2b9FUBydHOBwXiLi0x98/HIUY5vGZk1yQIG3gA7PBH7MAjutHhrjMdWAQTcyc1LaJImNs+mjwOpGFxcGpkaBIgMHeIcC2VQDQyIW9Zq5g6D9Ne9dzOLGzR/Vx39r7GCInMAPD5/cYFcIbu7cqJkYnR+CiEDMw4LrUHD4k55Ud/XKqp5CbjI/ZAkdVq7UuMhxhOGRIKEFAhusE29w9qJc9NDmi/iXQYO8Ojx6XYtjRg+3icJlvv/vJtNz2hgBbt/ve/b7p8grRBMCWnu2aWP7ff2GP4oOBTV1bFFyjk8PwKmOgc51kYUIM93X0xyGmBj7K27c3GRxtI0N6t8qQ8dCdG+WsE4YwNoemKR2cHKGgKmhb7w5AtzB8YU9gCf/f43d9I5TZzPbI31NknGzse/eFoDY9XLb2Pu4VBhgYvrBbk7CwiM9q1DVqXKNXsj3+/iGU4APSV3bD8XFd4GgPGURuWNUiwzRJcqEkEAYOOr3p9m/rHdKrD1/Y62jBl2rH3d/0RU3UKL307othy9xQsUOdwY99+ol4D1Rj7H33BdlSetja+zg8TByLeJhs8t2yo5PD7EWJUoiXIK4hk+Bj2cLlzHwj8dE+OIrISMZNiv0ZZZwROj1zyHjY9GUpYQB4dKnCgkQVKiqG7v5WsbR7331RoRbr1moicRZ6Q4Htdz3BAR4AwOC9516QL4KEwZ4dCpf9F3br2Ru7tyoVvXppuAQfgJcgTfkj6V/Pjb+0iY/ZBIcVoW0gY+DOjZKd7etUZBycHFFfbls6pNfeL2zhikQ77v6mbZfsPfc9K0JIoQE68dc/q3+zD/3DOhsjYMhj+11PAlAH7Dn3PRWwDB508Y4BvHx+N7yu1e58xYdvyICBsfcPXQc+Zo082gRHG8gojyYpMrSpUkRGDIs9vjAEyxaEPee+lxADAa//zVgbd5q1tX//Z6o2lB62e00DYPe552W3JBvs3aEe2n9+dxYfkrwOPrLxZS7w0Q44qpEBLzWatk0UGUZ+Os7Y3L1NHHtwMvReKDIUFnJopwkie849n8SIU3/7Wqs3WN++8N0vSuNDyeTxu7+pmw4ini1ENbPBB+BGBJkxOrnf8geA4yX4KGu/zHrnWHvgyCADXmoIMvyIWrvIAEAYnRxR7akKY/jCHva+V7Yg0O5zzykkiPDG3/6i1fu6Hlvz3QHPImCwE8IMeBaRx3pb7w7DH85Zm7q3yuG28aHjc4KPssH9ZKZSU2sZHDna+ARSESqj8GHcpDYyaLP0hRtkPLp0p6TZf2G3LwNZyakPqJTsl99+vea9rP37L3oJ4hGfm/zz8/9ytGaGq7+zVgUEgB13SSGZ40J6IYKXz++SpJsDPoaFimriQ8dfZHw/EadXrv0hLmBr5NEaOFqSGjIKL1KjAhnkZk8FzhidGlZBqoSx/8JuMIiIwTvv/ivZuevcc75IfPrbJ5uWv/+7a8nJUggWteViOtblOzMIYIA0aMjDOlZDyT7wnS+oH4bu/pY4zFCIdsyISnV42tw1aPljoHO9b8KU48ON386J+GgVHK0go5Izim2TKmSc3y1XtrBwHEkAMF6OjPu/s4Y8IRCRBwch+eLu0P8FoC1O20JxkzJcS/YX5SL3/mfX+LMBEwF3n3vehxh3dxX4aKpPDX/UxUf94NICOKoDipUayhnwo/BJH2gBGS6ajE6lImP/+d16uZ1/6pHxm+fUceNPnSor8Kpn+7XYJDNB/Ffye+AQA9/IdWdE4AidHKw9V+xbKsx8slzzrnp2jc8mhMKAbK+yBR9yCY+PKL54fET9p5zO/8iLj7aDS11w1AkoKkKN1HhbGLuvo5+IfO+46+nyU/oUGcPaiG2KDAYmSmCx8pkHtJfLZef/U6po6B7PJYhlhwFHAARc21UbscxR5xi/8bd5udP3bL9kF+6iBXy4LnbtP+3r6Gczfrts4b1WfAg+ZiW41AdHroVCbikVI0JtQHGTQFd19Jux1gQZrtU6OllAxoXdUn2+QnnXb57Xu8oi475n7veldR9+bJYSfETkIb0gf/l8MUO1L/zwr7zmcICIkWH7PJBVP33Prga7UsVAB6rwEcUXxYcPLieR4kOCSxCnZW++1AkujaYpkDCG2SdrL/nZoLKXli1UqQHIu2gZZBxBNTLOR8hg8I9+85z2TBeR8fln7v/8M/f7G3a0r885gxkfshj8p+noRPOa8pFE/kDZxGWlvWEM7nt2dd8zq5Pzx799yrdiWMOiokQ48tGlQ1qRo1PDqsPITWTBQ3dugM6O8+90kX+DXGpefdE1v4fCqy6pD3M+Ta0WOHIBRV88kdJQWC1DSdpIjWREzSnQJdv0yZZTkmiiyNAnbOKpUxNPvZEU7vNPrwIz84fyGUDg/n1o+jGDivCPeh1kGKCBPZgCLDz+WBHJ4JXPPJBkMvHUqfGnTrG/Iy7Hh9aK4APwgsnhI+gn/xaPDYjGF6b/aWG6qHdzeDQHRxltIJUagJMaUKkht2dfaScdUfP6T/tAQzQBkEFGhjBWPL1qxdN9lga86wQozPqss33EnUOVA+wQWomxZ5kkH48/fxGLy/ueuV8jnZrcBQNN8TE6OaIoQBiJdM+SmynnY6XU+bJFbo0QwUe83E3L5NEEHNUtlDgl6TxhOUteNhmXl1f9JNAw1to9iNrIYHCRMFY83RceX+tpMAMf2ifbuhOKDRgaaGI+F80T6UU5LoZByeefWZXkNvHUKbloLXwADy8ZlM2x6aMABlxwwfjMKZg5+okXrHny+ES8O9flZ6xmWPGZmT+WNiyJnb3ythOhIGVIIcNkFH50ckTSNOWMNwvI+JwnDPPAmphi1UAMCyj5awPEE08z8zHIyQ3LSh9aZAQt4i/++aeL+HijJj4OxviQ2U9efLh4LbWtbwfCBJdAHsUHvZk1BUeUmyzv59cAjY7Ku/A+oLioIV1eUZgE6YQuKbSZlgGAQjdXiCYRMlY83fe5p1ea2o8DRIwYRLCIjqpuqFNNxUtoOMpg1ODvQ09QK57uWxFDpAIfYnHNBHxIvUutTsyc9MEFCMHls7ZK5X9RpgtaIY8qcORP8+whYlhpI1CHCyhCekFc6fsEXmocsLl62nCu+tE5VaARMoQwAFg3FP/B+jJSCfCwQPjOzSHig5Fhg+qwojsMsABe8XSfzdbiw907AVEHDwHkg6/bMxaWCFDxkQQXd1QW6JWOBuO7xErhUc0cObUR1oiNaAM+oPhSuC8DnRsINDZ9RLoXNjupcUDuzAeUPZKb0MaPzj0n1Zoo0M+JyPCwQHiI7W7zDCtQ9Plmq1v1O5rLDtZk1v02W69mOFuUcFYZPn70m+dgho3kaXl06ZBUowYXCSUSoAfu3KB8rF8kuFjy8E+v+wGJgvIotVJwUHbT741oQ7ufAQL6PrlGA0rokSYCzMRxAvmeH52cIfWy65x7hkqREWQkR09o4jmEiGNbsPrcIxyqE1vMif5qIXhZZiphMk89KMEHAOz6zfPQ4MIOH9s8PiTNZocPmIjgZuAKYQdHEbQhGda6zDFIUcCKVTBHRm3AwFA/ZfG8X185o153zEEY6FyvHTjKNzIP1E4MBqATdsRNFciwz2iMBth/sLEgBALnWb0SN4dFKJV+LwQvyw2I/8ViqBQfp+x1EvEh+AjBhQAfpgfu3GDmwTq3OPJY+Fnk/IWM8shbHhxlUUh4SWDo+jbid1D7OtYokF1xXRra3L0VRAenRsy609h/YY+91i4vNaz5Jqt608vQ8MhXaQ73wAa14bGFsPnGEz+oqKMHvv91qPvjT9P54f/mgomJYqX4kHvc9Zv/aX2QzHkTobY5vP6pFOLqfFXHGhUc0ixQT4nXzHqNkWXJo4w5KN7wqjIGIFLaCERHJEsk4MTvjlqNIt9lNoN7k8DP89t17jmp4olvn7JXVw+Y9mcMguBl6xt3tseHUxiapz9WxxI+UkCoFNVrmDjiyqSqpyBE4mAmwYV9M23n3X8ldSX4EPIwTVJSjf9Q53r/bIbwLtN1zZLOxneJRAgJUsuAo5hI1vpPJrxbtSGFldb2xMwp8xKaj5TdgyBZ8ETTuzsZ+tNvAtjlJ0olyPDNk4QJ9Ck0T2vswzgMuT2WMMI1motRhaReRaGnrGRKVYgmHiVWBoGZP/f0SnshDS6Cj6G7v0XB585krrXQsGkjascBVrnV0gJ5JKzg27TFn8hMPZ9ljjLaAOKYIsCk5CwCgIc614PITyUni9hHl+4gwv4LewKECQAYmIjHMz/3jDZcrTd8QGHED1/6vCImfCtKXQ6pXK2yoGMCWN0ezTxGbQEZBXzAyalgE0+dKpZGgu+2MOzijPxKRlLbCXlIGln720YWxzK5UJJsp+AoE656rmUnucTZK29HtAGrQgjA5iVbfWOM4rtz86N2nXu+eNkVz6yC96IhD6/yjOzIMYd1eahto1HMRvkN63kBSZaLgv6AHuW4mPqhCFdQq2opiA9Y8ohqHwDokJJH3HGgjUQhD7vYd6wHmrhYrfnYyoJ5i0A5KRogCINZABjo3ABdnstM2STCo71DAO2/sDfhyyJtcHjgnFxg/ev1A5d4NnqOvSdUPFbfclluIVwBRvS4fV58+CKGfwYGET4CFRbER548ADy61LwS7IfkpDE4EMhDk9jvEXn88dplUHhD0ZrdbpQdSPalLSISvqKzV87YmKZBRAEhK6scnAoLqmjSobsjtWHtc26wSuva8jOKyAgqVJWJ3x/SRE5oCSLhcloM/y1oZC1JDI9AZgk+LCw+lyEPFMkDHhfSbNnUPajNxQQO8r/I0ntc9K9LHnosYY6Kc9IsfGoCSFahn/j9KUj8C4ra5uumXO+/uCe6DgHAhJlgt+LZ+xEpiKARLFwkMcfPnvJD7P4ICgXc1AGKwYctjj+a7LTMYRpKET70RorBRYdtrQndbusd0gE3xGgQ8pAJErq2czzJJrYS5aHWiFMm55LElD9mYopPE9OGn10ga4BCacMAyf0ZuutbAHa9+z0A4/HUSyMa9OFj88hGNZv1bCwmGKX+D/ReYUG1huuxHjEQszyRXgYRPvwdmasnZ8nEaen4MeThUpFfbUDIw6+aF5NH+nAmkeUK8m2WkL6FmWBJTCGQDKa4H7ahJDVFaoiwbanr26i+0opn79cHP/f429ZpmeTQ1N5bIXUa4Fs0j4kAVd2Msw2dLgp2js6PE5UqU5+rVKbU3rbeIaVlih87a0IesqTWskxkqTD3BDfCVosxJdmUFekHzOThONsgjkjUBmH3b18oXjOp49AqDJSexPiEwNnmk4qM6GCrxoU8i4X34icpVYQPuQculqWQMwPYfe45ADvu/lYuAWlTRchjoHODRhZPHlaTFKzU54TKgbcopkQH/MmWHKIIQ0QgeUX40NQBkC7mR3ExGcD434SXWld85wF4rtcWoSS0gsPtKygN1Hd7a/BIo0+uDRVxQ+b8Aj58vqXkMe4nFEpaSw6i3mSNPLfuqo3ZmSKEzmvdpZGlauCtGW0Q4hfnly10E0XTksQy1MudwBzDF/cCGLrrGwB2v/sCV100CsbmkS0+vak7Isxk0l+fGQBYiJSUJTozFa1sy1llu889T/6dqOEw2pKtPTJ17lLYrnR5faTkF7tTa22aYLFMfR39ILw58waBBvwv3KgsjWefQMHE/uv4X0fvilnC4FD74fm0tOHPyNrsoSHNsejRLAY5VwaL24gBlTySc8afOklpememqeEJgwC3GLyL8n1u9r93Q4uRpVFFG5UBKe2y9xsiODZ3bQHo0NSBIJoj5svYiu+uBiybeN4Om6rjalnOOW0amy8lXFSQpCFqpIkseRRAnsrSMp0hG4cmQ2Qp/IhM8cTiLkq+WCsbss+eYwZIbIvJ7PEvqZAeYMJgz+MgDF/cB2Do098AsPu3slgbvvZ3f/K1v/sTvQCXPnHpZ/o1l76W1VfhdfNPAYG418UEkxaKKW/oD939LYAlsgz27ih5sDORpZCgyQ6x0rBiR2KTHg6DBhWYIftYg1C0SRRwT7jv57+UAwKR+8f+RZMypd1YrVvm7LaQYHO0TR4gEsVNEJN8NwHGhBXPJXYqcrKAQAgkZhd02C1VgFEC+W5lR/kILVClOWKv6g7RNaJxpIdDGk4DneujyBYkR751na9KSg9H3V+5VksZ2TSxLJirLY1mtqOzyAuV50d3Z3cqOabXynzLgMFtya9KTKjs8L+Np+9LZq14oNHi40SKw5zgoBPTxwBs6toK0KH3XgEw2LsdoJFL+2oUBog1aRP1X91oqTKq3MxcqHxf3RZHfPL16uXhiy6yAHTIjbNshelhApDr2KDCF//U5rRgdrJPWRspKzgifRS3YhEfoqFPfwOgXedfBOG+n50qXiPUGUWbRaDMfmukBWtf1xbFqf1elq+8tu9kx59+M2kB6obTGr7tomlMg6Y1q35vhZLt7EaifMpSxXeeKeiph1YASCBRwg03Ght2qKy8BC2UyoYTDu30MEpXfEmuzMqUZxsCKzmlBBzlGZcqHvfNE0kBvzULW0dA3LjOjbKrZBqyNQuQ9nwV+VC6Sptn1aLzIw6P/pZaHhy2qZLJIheySa+eiWuArrJEAFH2zrnkuTT1Ppve19KNP/mPFcn6XvxasUizZW3mWYzu8ReDA0p2FC1usETJmveQ+mXgwqTRuKnyBkCy7kykhvyVlDo4PVJuPn0Zhm4ja1baiuPpoWzSYkWemD4KwtrO9QD5Bks/4k709E2nkgyLc0grLISJvGQlQJoqhMNTPwEw2LMdwPClHwMY+vQTAHaf/z6A+46ezGZgsmbdd/taSazJBRS/p1yTvg6waFJZAVeG72VJ08OTrwDYtGRrWUmsGCiNJoXdLYyt5LJM91HqWw+ZOMQUMzr1xfvKr9z6tM8yowjZNWY2ZAqD1IUtl64mIyaaNO2tRsYlFJIV2idVOjJ/rAiOpvUV6dCy1AUAUFTykoyren9ymy3ZXHBQzahQXWz2TZXq9HH3V+Zr1sobnM3rI8ccQWDWuGwE06Qkrbgj/yTMudW4onFbjjE8kzSht/pN35DtXFZHnfZoG0P2za5ZvKzZU9EKZVMv3BKwbpbNRrRrLY/mtTIL9aZZtA2OWtEntLWK31q4yOwCRYtSO9smfF95Rp2S5HZQs0xuwNMz28zhrNACV6Faek/GZ1Sd8qY1Yep00F2HRZXGxQepIDHn2tpZh7SVJLkw04bXZ61Okjd/61pZc3R2LOv1ZgW8Af09NcExSyWpDhNNn4zWlHnt4rRoXhgFHqlZOy10A1ZZoR2Yn8QxCzZHYaV1q9kk/whbpvF/k61tcLTNJXWDSnFG4nXUF2UmUNW22Sbw+DapeLCi/6hOlrNm18UccznDwvaitHdysTVyXexUnCPYqtXoYo4bdTnghK9+a9bFh2aYA4erhFoXzSSqNWBUNEWDIQyyFRT37tXxbe7U1p/KObCIxSjsEUS0NJUvsdod++WHwpEiOGrPpsiBQI/pS3/NcovNA4LSh7zG0gEl+VXtrp9bMoerfcuOkFBGjeeJL8F78xsoR0vzu2ghrOQ7gKORx/YnR/YfGy+8cjMrT3hOasyCiJkVS4IIGDolmwD8y7ffyKU2O1rqxqviivyxFByVzmW9SkWyg1MHAGxc/AiYhy+9BGBr92MM3n3hB2AM9X4dwJsbvpA9lwLtR61eyrqzXtVkw1LueN7a6+EovZbpZUmehfDiRu7kVd99EMDQXd8EsOfdFwAM9j4OP3C/sWsLgIOTIzUKV77OQGF3c+aQiSGL5/cgnjAyPnMSwMqO1QBOTB9l91NkmQuTuXCNroqCtsjjgZLt4jVvrNW4YiGgeJKgeGKD2VM8P95dmDLCD3Z+iYET04fhvSOeshO1skutIM2qBBx26lgGaHErJfM+cZpcusLt8WxV+pvX92xDu860P9pjgDYSFuy6tEYutlEKl3i1veT8lrU0F75kLF5HNEpZwhx1tGyTorjP6kn3kdlIEn78S4+GZy06oay+Sh68soMtWXo7Nfgwim+WIZQ8IjLJBpcWdLQb5TbrDtkOXY7+llpVWMm8Gpxe3f3vrxo1ZKpWZMod6j86Tuala2/xnvSwieHmlET3Z4pxo8y3QxJgBrQoP8rSBAqLX/3NqZoXSCYKXY8luWTAUQKoqKWaycwDIm30GbjuvvB9AEO9TwBUpkm1uoxE02cLSr42vfvw2tUEnyKVU/K9eur5qhe/hqonLIFqCkkfFaPSajGt4HDYcMdTwbHq79cCJOua7Hn3Bb1QZrWpXCkZsfdqW6PFc4oNFrY7RZMenBqBNFiA4UsvATzY/Vi9C+nTlBs+tY0W0/FhVxQqyZKIgrPqG6NQhlzkN2ohpbCMvs4WoVpwmB2yRkVJU4XXdq6T/qUKnMRfYHp+01PKw4pVwOZU12BZEDVYGBibPlKIGSWtpvIVffqPjZuWfgBARBcmzsRkXer3TBSahZlmOVmgPJGFYnQL4aePzYoVtPrE/3lg7Ff3j71pV6bIvn7CANL3CN3usekjAFZ2PABgfOZ1gLWpUqEzigdKwWEbLMlrDklQiTCni/0VoBmdyQAwkYssqZM1sgTthjhcp6ebM3Nr2bQiS0ubk9XYigVmnJd5m9VhyQOlgDZZmaLvH9Ym2WeXfUi4guNO3fA6P7teCfdj97mfPFDLgyO3uADiGGeVqC+Yk0amtcJgxvClfRpZRHbs7H0Cpb7xICCybRZDHkXlUMwi1h2RACG7s66VJc7J5VxxfPEDFQYhRT7wVbzC7he9eQHAYM/jHBYHiyJ88enPhYvqvolgDa44WMlAhWaHw8TaznUARqWftOvLSKZlN1slTfrRDUsYrOiTBvtQhxhhCT3sQGAdimBSFYnUyBN4GV80CVBWPBn14xspcUwZ+1VlQVJjLzhGJ0e05nWV1GLyHHSyLOCsjSH7SPwWZEcuspjOjgSL2cgCwNVX6FBWAoav39gt5EM4DBI0H4MH76mMfMwXoyhywsWtgMxBLUIwIsCHIlJZAATw5p89kBbUf02cqRUrXrjvjtXwgqPJ6kPlFNBAwWHZsyVELZ6/BMA7rhP9XuN2XTu0GFlCzoPdXyH3RiTv7H2iTJn2H5tw9RVkaXjQJA0FF8WVlzQtAm3HsIBl+UpLLxHYKJpNYIEbZKbPwkYVSaGNWL+5+ngZbdDQXd8A+ZiyZHs4EnuuzIXLFi5naUnEgqOplTIHg69euwzGx5MFowrhJBPSmBk8OnUAjI1djwDYf2lfGQYnNqwpXt3yhatw2ErXbaNM3ImRoxCefeMt78AWZEc4NwFVpDksS/noZ5GhXRoUYOSLWLzmm3/2QLJfa09+YWNj1yMAH5w84B/ONKYYWZoJ5x+ftxDA1WuXm4zKNiOPxDi+MADc1/EAM8amj4DxYBT8/JJoppDyOrWQR7ZeYvKAVQxauQ46QWkYliETDGwAUIfUhIVe3PyBxQKFowWdbPp7Q0whU1QHfEKj/3hYLM9eHhSkaCGORJQhde5iSsdqv9/q0dZiClqafW7X0LSR5fTM6wjwDCBIrivksW3JY4W88wUkxQHpA2f/EoJnSNFhvkOfW9NcVLx5vzS1qBUdnnsFny9kUBKFTejV/YfV3OUERunWtp7tAPZf3BsqL/lrtvxg7L0AS0xJVkEtNwepRrQjTRJFltDbYSJL3JgOfPagdJVOjjDzpq5HCuTBSh4EmlifiSxCHurGEGZMdZMHSmAY0wow7RqK8BFyaQKO4HmlDsMFtu2pZbMATYsSRxPPG9T/8wxtTHxpNYCdS0MLNqnpTV1bWGrY1bZSdDGmuF12pF5jSvbGJX0jt7OORe1n32Z5AODj04eDSA15MoP3X9rryCM6mwGM5/ChAQWeRYKPNaZotDHPtEYao/68R3wmISRVWeAACl8oKZWNXJbsvBwiva7ZR6BGpISMCTKiYjC29WwHY//Fve53GKwUYAA47jpGV8O3UzKSw5rLodTpETgqgpJlJCnZO1fOABzaLFrWgFZ2col5U9cWcFxCxu7zLwLY2fskSrzUf2xCxbxKOcVHHFxM1ZszwkNvPKSebhpVLHMhQacNGTBItbRh41cAbiQ4+n/2Zv7SIE8bL1rPSK062pgaMaGcE0cwywQfFg0Qx5Sqxqkea6I5WJiHs/3oGVkqO8amD4OxtvNLnPySBPjli3vBnCgP8VGWPHxwMfhQZqaACUWJUYJktiIPWahV337RncpboRDxJULZTMSDSeR3NsqQMbFudfFZSdSG/h4YgLWfWgdg7P0jxgcZKRrHlEXgfDvFbhfnkFbo11SWym4rS6U3jG3BwKOTBxiOPMxBBvOuZuQBYM2xiRC5AzM3AjFYVrDUQkTUIONgz+dEaPiUleYdqvLDK0iVFuaKVoVaWMSgISKggXLOkAvvXPoklDbCMpQMZjcMG9OGqI2Vru8rSFEb4evQht3IMkdCBVE718pSz1fJD1wwwMenjyh5uCS+Zbv/4j6AB7u3c3qpPHkgBPzw0BvCb1jcmC8eFkREAoUGqKH+9nlWmYdTw7sWBmcGATaMGdqwRQ0p0HB4y9nEutWqXrR60kaKpw32tHHc0IY2FOTc4qRRrfZq2kDJZJ/UkuXTPQRURDj3n545qeSR6IvRyQMAb+p6BGGRTYfmXb99EcBXPXmMr+8vFsmJD+MSG1DEecnO8Jg69DTsIaKG/CteK7LI++6sEKG8oiRzLeiFoHsUEw2HDGpkaWN83WrBq1DprvMvFlSco43RqRFf7dDHU2jj9MxJ9QgA7W1SKx+JTT1fVjt58ijykpDHZxYuj3+GiAEcD8rDH/HEKA+BVx5pcCnFRwgQjVD1UfOAlCEi0CgwGsHBdcKKgsBhAnH+DjINiw/FpUVJnKDRf2yieK3xdauFUL6qyGAA2LZkO9zvhhoOZ2aw0oZpDAhJ4zMLl6t3rBPNwHoT2kD5kH3eVJYy0DW/xzCEi4njMXmYYMcC9k2Lt9jMt3U/Bp8JgXf2PllB9RYftq71mU5CSbRfPOqlhjq17FrOIrKxisdRAgIcBWpKMg2y0secn0WGmkgN9cO2JduVNrTRNzoV3k/x2lPUBo/PnNTGilasjSkJ/SPKJ7UKXo1SX732hziX8KnkEYKdR4305q7tXMcIP+a9afEj7MlDb2DXb1/QDMvIAw4fDe+hRhJdQESNwBlWDBprmOjQPKwYmdIokgTZIILCTn8VPbEMGUobgtZd51+0cXn/hT0eGepy9o2UwwYozj+WNrLNCPVmtVUMvOU2jSwtIQ+Mz7zO4JUdq4MI9WeNTo1oRhyCy3aPjxfJzAMqx8e40YMeCjCfDhkNanjC0M+GB5bfrK6dmH6MWGnoZ0AAGoG9QtmUq1CBjH5Bxs6lT4JFagAhoOwJmgMYnRp2kcM8qCvvWM3g8ZnXfVOQPXM7H4X3l6LWhe7Lh4rq2onOuXLtDwAWzFuUI4+34MlDYSTFGHv/sERHIY/RqREwb1q8RfDxch4fVeID7iUGoyOC3lRl6hxjnvBG7Fciol889mzFzT/446dUXjhYBGwVglcjEsvSWFVYoIoz+oUtdi59koBd51+QKOyQcXGvuHlT1yNgjE4Ni9sHOtezr9tYRPBn3HTRtxIfMVhiypV6tIFm762U7mVwTB6KSAY78ui7Y7XJhAc+tQ7+5yMkuAChUaP4AKMOPlYfPb366Ljvi2y4KOMZgoIvG9QwLQijP5rShvNuwwUUjwyXQ8M3jB16YBhL5ar0Zxyb6D86nr3C+Dp3d4IMdeU2N2lDmNchw9eWBBRPEUDfHf1CG+oFVZ6GNnKM4V1TVgFNR2UzysP8JJi7G/ZQ/czC5TDRUoLLcRcX3f5Xp4bNefxy+KFUwKj0pvgAsPro6Ti623BTEKT+uVcHV9+57xeJNErc2LFXMYxlSKUMFvD3RQYZeu9SOy9f2Gvr/9WpYf90MQPH3z8M/wT6upUOSZy9/Ja5joORb8EmtFG1SEZr0wQj/nLkwV3ze3wTiR2tMZ+eeZ3NTtFNA59aJzsEH/6B4Jcv7oENLudfpNr4eODILy2/GzQY5/mn33OAb2JUG6m8lQAVhxgjcXxHmUUGEdHqo6fL8h5f30/skCG1qSJUaMMhw9eS1BgDA53rGRh7/zDMNLzTMyfBLqDozq75Peoj47UWrPnYSp48PrYoTgMGzl4+Y0/ywaVfyioBUoJLig9GFT64CT7uP/zG/Yff0K5MLzWsKLE9YObprzQNE3E7pRHkSxSt7LUaDxw5/cCRX5blPL4+6AwAxKG/yyNjTw4ZLE+X1CTigKI1f/byGSsJxcRfLdEG6jBHrtkSRKfEMyEPtso0tGFch79urvX4kG3XbZrigwM+ljbnDwCrDp/qO3RSIeBjTdzPoY++hJhqc0qCyHei28gVRDBsPwrdf0SQWmoOGVxABltkIDw5ru4cMrQmpYWiAcU3X9+STfFIoA2gCIWmLNLOOqRXpDf9Y2GBhmJwEY19euZ1VyxmER+SWITWq5PDgJ6U4AOKD69PiUAT69dkZwaprTz4+n0Hf6FsH1oXwa3uEGp1crh2h4GDQRssedCqQydXHT5Vkd/4+v6J9WsIVIWMi3tchfnn59VJJzVkW6SGH7GCBBQv6Zw3JKCod8RTV9L+8uYRphY4ctkw4vfhbHBhYNnCexUfDPR1OJgLPgY614vWfnVqGMDmxVu0dz3Gh9No5OaMOavGB4DPj55Y8eoYJQNg8LCoNVgPM3LrlKmOzZrRWALRyoO/WHnw9ercHCwAeAVK2qVhkcEOGZsXb4ERofIL9YqMvo7VLDN6mLW2k4ASd4mmPqwjPmj+xz9VI5mbMWP3LJy3CKCr/+Z+B65rfg+Bpj64KHS8bNFnCTh75W3xTF/HGgLGf39KRrEeunMDgcZ+d1QGwx/uGgQw+t4B70482rMDMu3Ue3Hnp13P+q4L35ey3Hf4F3VKDuD/fnm9VRzq1LGt/73irIdG/qtrSjJ/yB86wmPWnZ/955/XLICieWfvkwATIMONkQIVZICZDTKYVcgf9yK07w6HDOEKj4wQUKwOXfCxRQAXaaMOOOq2VorKtCK4aMN12cJ72Wz23dHvvjN7eQWw4Q8u8oe7qKtN34UKxpsbHnxz44N1Cv/vf3LknlcOLztwiPzwh59+0dQ0cYPcKXTvT48t/+nPaiJjYsMX3lz/Bcnlq71Pyhe9F9RGhrZgQx0iIEPrvGZAqdlmqcscLnUz8gDw3geXZHPZouUEOnvlbaGHVR1rIL+hTUTAQOcGeYIz/OFp/9HeHXIhpZCdn/6G7Nl14ftOURIRsOLQifp3obbnf5Q2KAA8NPLfGGD+8K7hf24j8zc3CHCds6RZDh1F8n2gCAo0jiYxMsamDwt4ZIro6Sig8NnL7vV5eeusmjbKOsuL1io40DS4APReCC4pPggY9/h4qHMDYnxs7hqkJvggIgy5oUvafTFAZMXBsfo3Mtf2Lxsf9CqMh4TqQv8eVyCDgdEYGWA+7pEhUiOHDAC8OG6hXE9AEWsNHMjj4xMAaoiPDH+U4QOEg1OvFPDxEskxoqGlT5Avy+6LPyBHakREnx2tKwVm3X61acCMeWGo9wn1xe7zL2q7rIgMabVWIyPHGdVSoziM0gIy0AY4UBJc4PHRPb9X0gg+7lm0XFBSlz9AD3cPymUOTr2ikzIf7Xlcvu2f3OfnX2FIuJoA0J6LPySPDxAtf/VYq/d1PfbWpi+yb2kAPNTzdU/f8oaOk16D3dtFuslEa9vTBW211uUMAPzO5TNWarhVN1wXZfsBRaw9cKBAHk3ERxEfKOEPOSXGh/P5thgf5DQlDS19Ai4R9lz8X6bbCoTGPf98uNUbrG9nHv4SzFQVZt7R83WV77svvGiG1mWFEkDGWr1Mt8iQdDU5Ay1KjVZpA+2BA+3i49dXzngvVulTeGbY3LVV3H/wvQOChm09j7tLE4YvvaR9GCC40E4EYN+l/wVqkCKIiKjxmZ+MtnGnWXvnP2wILQhp2AI7lvyFr31lC8ck8h6XeM4jw81bgMzs8vhqqkB9Z+icIwNtgwNzio/pI9rh8XDXoOJDO6Ae7dnugxsNT77keYIA7Oh9Al6AgOilS/+oRw1QANBdB35a/2bPPfKwdm+AwfiQvYDYvuQvQlveLzAhfgVjcMlXHKnI9HHfg6zI8GPUrqfr1kEGZhccC+YtIiM+2sAHQA/duUESn/jd0YAPuDMOvfcKnPNdlJHvw5M/hhn12NHzl773zO0F8OPJXYFK3GRPdwtJf6mfT6XTT3zXF8D8IYDHur/KcTqA91z4AYeTeLD7K/CHX764T2XHRjORRZGx1o+b+J6utpEBljecizfUurUPDlSQx7XLslvEKdrFx9jvjmojREOM4EObLduWbCePg5GpH5PtLyd6vOcvoXqEAgaI6MeTu+D6xNLuMI0O6pWvdO10OsL+B4B5z8Uf6lCIcMlWgQUYDHk9WAPMpsWP2FAiiQauAxnQlVjcW4mzRhu4TnCgGT6UPFADHwQa//1J7V9HwAcQSxAiOjj1SmibgOS1HwXNyNQ/hfhBDSnJ9p6/gALFFb6qm5RNrRowMIC9F3/ov6vm4MHur4Rwwth/aZ8/gcG80U9eMcgwDZOADJaBeNRDhqONOUAGrh8cqC0+UKP9YvFBwIBAhGhs+qg6e3PXVhWhh6Ze8WNjINBgz3ZVG/JxYOp/w0FGNYc7/FjP1wo3QpnGHjMDL136Rx9WHCD8Bm/t+vMIPODhiy+xCyLMDLcChYcFPKAGOtdJNmNhplwGGWVtE8yZ1AgVMkvgwOzhI4zPCT7E2xJivGdpc/dWeKI49N4rTmn6QONLpOnxiqLEBy89Xiw89BlH8LuHheziLd3/2c9YCYmHL+7zrRiwNFP9ifLOn+BJCEPOjJGxWrKcFWQARaS3ZrMADtTABwr6A7n+MYIbvwVo4venJJmGGBBOTB9FiBe0qWurOvjwez+xh+T71iWP+RASRtokK4FLTnKoeS8DWxb/J2j3RXQEw5deMirEIWPj4i9rKllfRc9Z27lOASehBO5NRmb3YgeyPV0o6oy5RAZmCxwuL/3w1go+qiSIpxDn3xPTxzwECOQCjWRIwOH3f+q+ByFKW5d8xRcwwCGLaWOBlj2HsD/Aw5M/Nj3lTmdsWPxlGL45ODWiTMPA2s4v6cHqUAKwLAHYHjKuHxZisw4OtIoP8uNziEJMP+B8PzFzCu5xp4HO9QqR16aPKR8Iiyg1SCPk0Ps/NSKD7CguQFu6/zzTijWmOgLgA5P/FDdUAhMws+OJwCyykiJrRHqw80ua49j0Efgur5UdqzU3ndMlM8jZjKjhhnOG2GyCAznyQAEfSf+H4qMkxBCcCoFSy0OdG/x16LXpoxYiAG3q3iJX8UkIwOH3fqotXihCItmRmrZWLEoUHBsXf1lT6GG76qN8kbXR5Pjx6cNKDAz493o4G0qKyLATQkuQgVmkDcw6ONAiPuLx2xgfICL0+RDjKSRoigEDEQJe+90x43giwsauLQEiBi3yR6NPXPLksXNb6+/8j2GPBQtEVRyAFa3A2k99icNxjE0f9lIWkHdFfSb6DmMWGTqiduORgbkAB6rji+8fK+DDeU+G+OE6QlIKyUPEOF8goo0aZY5NXVvSglVJUbWgQS1jM/jQ1CsIgiJgJQMLKAs5WCAmDJj5+vI+kpycQUZ5f0Yo5uzZnIADlfhAoX8dbn4QEgniIeI6vPs6+lVwTMy45q7s8CxCihMCnZg+ajs2bCMWwMauR5pCA77GD029IlvW0+rmB53S5CawcAdloQQnRwQWyIiMHsTIKBuInyNkYO7AgZL4Uhx/gV9AwoYYEJYttBQSBtPKIUKQee1BZ4bRk9emj4U8XPkS6qBiDQelEfa4//R3UjmGhaw6of3lRVj4M6DIYHmZ1IPNEgY81srHTeLyzarNIThQwh8L5i0Sz5VLEFRSCADXnNGM35x5A15tyPXWdq43aKAECa9NH4vLlyGR0FvKAOBaHIDFQ4KJ0ITxP5TkT+fTOVigQBgVIoMzazXNFWeIzS04UIIPaIghd8M2xJB7aBIKgUJEPS09ItbHTpEY8gCw9s51xv22gVI/sBgweNyceP+ocoZ6faV7Qyecat7sQgyLImEgDSXzFknarPzEXCIDNwAc7jL6YawoQZCGGChE7ln4Wc0sgYgo1jhCRCiJCkCeV5LSZSyq+RPTR4LuNEqVi5gAwL6vEyjCAvLeqOkYqQglN6ZhkrUbBA7UwwfyFKLBhO5ZuFwzc43e4H7q6+hPLiInTsy8oVlUFKbSrDMcT0jgSDCBQBUQWGgDVXa9c+WMHY7JEgZuAWTgRoID5S5JQgxiFQIbZVABEd1DAPo6+oso0TRvuoGbfHlic464z6+EAUMbmkTWhfWudYxSDgvAvQCGjMKoCiW4YcjADQYHmuIDsCoELso411shAihEoAkskdhrJUAJOKttnPxFERCwmEAMoBJYAG6ZAsQKA7cCMnDjweGuqh/xzgW5KIMCREyIIAAJkSDDJenl+j7Z32qZx//1pNmyYrCICffXLwMaekTKYAETR65eu5xDwA2FhdjNAQfqUEgQqu7DQgRhaAbasbHMoySJJ78Oa7UW+zbqGEd//F9dXdPsZbjf9oXlFB02s7BQf5uVcG4JwlC7aeBApSosizIoQCQQCULMWVbgkuSCBi7mUGqRR2R1lAQnFi4eE8GVShVIYVE/juBmIQM3Fxwo7wWBizKf0I0EIgC65vfa0+JwA4uMZQuXF4CSv2i5ceEbn/W/CxB2x+FDD0yZX2MswAJXr/2hxP1z3pNRbTcZHK4Q+pE7ZCEC4Oq1yzFEegr9mzpSE4CSpFgWek3qml/Z0xnHHzCjISZNoArZdEupNIcFbiJhqN0S4EAlhaAUIlH6HEqQA4p8bbW9kunPQA4QKGBC3NwSLHBTCUPtVgGHWHXfVAQR5IlETOebZbIHyC73HB2JLfaP763KHQOQ+yXfIlWgCSxwKxCG2q0FDrGmEAEoLJTrE/7x2pVs+hKgxCc3sVJ/lf20s/z2oj316rXLzRx/C8FC7FYEh1jTHm4hDIcSk7AMJfZEKxhrWrxsY94CJuBgITq62Ym3HCzEbl1wiNWECHIocRNHSpuIs2By0aIc0YveprAQu9XBIVZHP0YoKSS3ObQNF7Poe87rXB8TddPcXLs9wCFWs4kRT/eKPNpehhVelN9VrZOyZoa3lN1O4BBrByKIwk0FXKotopzYvx8xWIjNu9kFaNkY3FSIIHYDAe4kAMDV/3e5RgZpdsVdLfr5lpYXWbv9wAHfMVm/I0s7MqOutnZ81Wb31O1FGGq3JTjE2Pm7BQbQcZDagyzFIZXW7DaFhdhtDA4xDp5uAyXRFuWPtme3Shf49dhtDw54H1DwRcvjJjaf2SjLbQ8LsdZ+xutWtrgf6sZ7hz9iyADw/wG7440E5rTVywAAAABJRU5ErkJggg==" />
+  <meta name="format-detection" content="telephone=no" />
   <meta name="description" content="LUMEN — 音楽のビートと周波数に反応するシネマティックな3D音楽ビジュアライザー" />
   <title>LUMEN — Audio Visual Studio</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/style.css" />
+  
+  
+  <style>
+500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{color-scheme:dark;--bg:#080a12;--panel:#0d101b;--line:#252838;--text:#f0f1ff;--muted:#777f9a;--pink:#fa58b6;--cyan:#55ddea;--purple:#9a6ffc;--round:14px;font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(ellipse 75% 45% at 49% -12%,#1b1930 0,transparent 65%),var(--bg);min-width:320px}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.4;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,.dropzone:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}button{color:inherit}.hidden{display:none!important}
+.app-shell{max-width:1900px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}.topbar{height:76px;display:flex;align-items:center;gap:30px;border-bottom:1px solid #242634;padding:0 31px;background:#080a12d9;flex-shrink:0}.brand{display:flex;align-items:center;text-decoration:none;color:#fff;font:700 24px/19px 'Space Grotesk',sans-serif;letter-spacing:.21em;gap:13px}.brand small{font:700 8px/15px 'Space Grotesk',sans-serif;display:block;color:#9298b0;letter-spacing:.55em;text-align:justify}.brand-logo{display:grid;place-items:center;border:2px solid #de67e8;width:32px;height:32px;border-radius:50%;box-shadow:0 0 18px #cd40ec44,inset 0 0 12px #6ceaf244;transform:rotate(-27deg)}.brand-logo:after{content:'';width:4px;height:22px;border-radius:4px;background:linear-gradient(#f46cc0,#5bd9f9);transform:rotate(35deg);box-shadow:0 0 12px #d96eda}.brand-logo span{position:absolute;width:23px;height:23px;border-top:2px solid #5bd9f9;border-bottom:2px solid #fd75bd;border-radius:50%;transform:rotate(60deg)}.topbar-center{display:flex;align-items:center;gap:18px;margin-left:13px}.top-separator{height:28px;width:1px;background:#2b2f41}.project-name{font:600 11px 'Space Grotesk',sans-serif;color:#bdc1d7;letter-spacing:.17em}.version-chip{font:700 9px 'Space Grotesk',sans-serif;border:1px solid #423556;color:#d194ec;padding:5px 7px;border-radius:5px}.top-actions{margin-left:auto;display:flex;align-items:center;gap:10px}.system-dot,.live-led{width:7px;height:7px;border-radius:50%;background:#4bd9a1;box-shadow:0 0 14px #4bd9a1}.system-status{font:600 10px 'Space Grotesk';color:#a5b4c6;letter-spacing:.1em}.help-btn{border:1px solid #3b3e4c;border-radius:50%;width:26px;height:26px;background:none;color:#bec4d7;font:700 12px 'Space Grotesk';margin-left:19px}
+.workspace{display:grid;grid-template-columns:304px minmax(340px,1fr) 276px;flex:1;min-height:0}.sidebar,.rightbar{background:#0c0f19}.sidebar{border-right:1px solid #262837;padding:25px 20px 26px;overflow-x:hidden}.rightbar{border-left:1px solid #262837;padding:25px 20px 26px}.side-header{padding:3px 2px 21px;border-bottom:1px solid var(--line)}.eyebrow,.stage-eyebrow{font:700 10px 'Space Grotesk',sans-serif;letter-spacing:.2em;color:#cc80dc}.side-header h1{font:600 27px/1.38 'Space Grotesk',sans-serif;letter-spacing:-.03em;margin:10px 0 8px}.side-header h1 em{font-style:normal;background:linear-gradient(95deg,#fc70c7 10%,#aa84f6 65%,#72d9fd);background-clip:text;color:transparent}.side-header p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}.panel,.right-section{padding:22px 0;border-bottom:1px solid var(--line)}.panel-title{font:700 10px/1.2 'Space Grotesk',sans-serif;color:#e7e8fc;letter-spacing:.12em;display:flex;align-items:center;gap:8px;margin-bottom:16px;white-space:nowrap}.panel-index{display:inline-flex;align-items:center;justify-content:center;color:#e8a3e9;border:1px solid #64456e;border-radius:5px;width:23px;height:23px;letter-spacing:0;font:600 10px 'Space Grotesk'}.panel-subtitle{font-size:10px;color:#666f88;letter-spacing:0;margin-left:auto}.dropzone{display:flex;min-height:173px;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px dashed #614d82;border-radius:12px;cursor:pointer;background:linear-gradient(135deg,#20142d8a,#0a14228a);transition:.22s ease;position:relative}.dropzone:hover,.dropzone.dragging{border-color:#e78cf1;background:linear-gradient(135deg,#352049,#0c2130);box-shadow:0 0 26px #d65ce319 inset}.drop-visual{width:39px;height:39px;border-radius:13px;background:#522e65;display:grid;place-items:center;margin-bottom:12px;color:#efa6f5}.drop-visual svg{width:22px;height:22px}.dropzone strong{font-size:12px}.dropzone small{font-size:10px;color:#9692b1;margin:5px 0 10px}.file-pill{font-size:9px;letter-spacing:.02em;color:#a995c5;background:#2d2343;border-radius:8px;padding:6px 9px}.file-info{display:flex;gap:9px;align-items:center;background:#121627;padding:11px;border:1px solid #332d46;border-radius:9px;margin-top:10px}.file-info-icon{height:30px;width:30px;display:grid;place-items:center;border-radius:8px;background:#59345d;color:#fa90c8}.file-info-text{min-width:0;flex:1}.file-info-text strong{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}.file-info-text small{font-size:10px;color:#8890a6}.icon-button{border:0;background:none;color:#9a9db1;font-size:23px}.tiny-note{font-size:9px;line-height:1.6;color:#6a7188;margin:10px 0 0}
+.palette-list{display:grid;gap:8px}.palette-option{width:100%;background:transparent;border:1px solid #242838;display:flex;align-items:center;gap:10px;border-radius:10px;text-align:left;padding:9px;transition:.2s}.palette-option.selected{border-color:#8e5b9f;background:#23182e}.palette-preview{display:block;width:40px;height:39px;border-radius:7px;flex-shrink:0;box-shadow:inset 0 0 12px #ffffff22}.palette-preview.aurora{background:radial-gradient(circle at 37% 65%,#eb78ef,#c244c7 31%,#2f67e1 65%,#53eff7)}.palette-preview.ember{background:radial-gradient(circle at 35% 65%,#ffbd60,#fa4b69 38%,#8b34a5 70%,#231329)}.palette-preview.glacier{background:radial-gradient(circle at 35% 65%,#72ffff,#398ee8 39%,#5447ce 75%,#18163b)}.palette-option strong,.palette-option small{display:block}.palette-option strong{font-size:11px}.palette-option small{font-size:9px;color:#848aa4;margin-top:4px}.palette-check{margin-left:auto;color:#e49cec;font-size:14px;visibility:hidden}.palette-option.selected .palette-check{visibility:visible}
+.range-block{margin-top:19px}.range-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.range-label label{font-size:11px;color:#d7d8ed}.range-label output{font:700 11px 'Space Grotesk';color:#e5a1e8}input[type=range]{appearance:none;-webkit-appearance:none;display:block;width:100%;height:4px;border-radius:10px;background:#363348;accent-color:#e67de0;cursor:pointer}input[type=range]::-webkit-slider-thumb{appearance:none;width:14px;height:14px;border-radius:50%;background:#f1a6e9;border:3px solid #5c3b66;box-shadow:0 0 9px #d67bd2aa}input[type=range]::-moz-range-thumb{width:9px;height:9px;border-radius:50%;background:#f1a6e9;border:3px solid #5c3b66}.range-foot{display:flex;justify-content:space-between;color:#596277;font:700 8px 'Space Grotesk';letter-spacing:.07em;margin-top:8px}
+.main-panel{min-width:0;padding:26px clamp(12px,2.4vw,42px) 25px;background:radial-gradient(ellipse 75% 60% at 50% 45%,#1b1633a1 0,transparent 65%),#080b15;display:flex;flex-direction:column}.stage-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.stage-eyebrow{font-size:9px;letter-spacing:.17em}.stage-top h2{margin:5px 0 0;font:600 20px 'Space Grotesk'}.stage-top h2 span{font:600 9px 'Space Grotesk';margin-left:9px;color:#586179;letter-spacing:.04em}.stage-top-meta{font:700 9px 'Space Grotesk';letter-spacing:.11em;color:#8b94a9;display:flex;align-items:center;gap:8px}.stage-shell{flex:1;display:flex;align-items:center;justify-content:center;min-height:390px;padding:17px 0 20px}.stage-frame{position:relative;aspect-ratio:9/16;width:min(100%,390px);max-height:68vh;overflow:hidden;border-radius:8px;border:1px solid #453351;background:#03050d;box-shadow:0 0 0 6px #1f193524,0 14px 80px #df39f018,0 0 40px #8d4bf81b;isolation:isolate;transform:translateZ(0)}.stage-frame.ratio-landscape{aspect-ratio:16/9;width:min(100%,840px)}.stage-frame.ratio-square{aspect-ratio:1;width:min(100%,560px)}#visualizer{display:block;width:100%;height:100%;touch-action:pan-y}.stage-ui{position:absolute;inset:12px;pointer-events:none}.stage-corner{position:absolute;width:12px;height:12px;border-color:#b878d2;border-style:solid;opacity:.6}.top-left{top:0;left:0;border-width:1px 0 0 1px}.top-right{top:0;right:0;border-width:1px 1px 0 0}.bottom-left{bottom:0;left:0;border-width:0 0 1px 1px}.bottom-right{bottom:0;right:0;border-width:0 1px 1px 0}.stage-bottom-caption{position:absolute;bottom:19px;left:0;right:0;font:700 8px 'Space Grotesk';letter-spacing:.17em;text-align:center;color:#d6cee7bb;pointer-events:none;text-shadow:0 1px 3px #000}.stage-bottom-caption span:not(.caption-light){color:#f38ed2;margin:0 4px}.caption-light{display:inline-block;height:4px;width:4px;border-radius:50%;background:#6cdfff;box-shadow:0 0 6px #6cdfff;vertical-align:middle;margin-right:5px}.stage-toast{position:absolute;top:17px;left:50%;transform:translateX(-50%);pointer-events:none;opacity:0;padding:8px 13px;border:1px solid #96649a;border-radius:8px;background:#171122e8;color:#f2d9fc;transition:opacity .4s;font-size:11px;max-width:90%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stage-toast.show{opacity:1}
+.player{background:#111421;border:1px solid #282b3b;border-radius:12px;padding:14px 17px 12px;flex-shrink:0}.player-top{display:flex;justify-content:space-between;font-size:11px;margin-bottom:12px;gap:8px}.player-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#c8c8de}.player-time{color:#a6acc0;font:600 10px 'Space Grotesk';white-space:nowrap}.player-time-separator{color:#53566c;margin:0 3px}.timeline{height:32px;position:relative;cursor:pointer;touch-action:none}.timeline canvas{display:block;width:100%;height:32px}.timeline-played{height:2px;position:absolute;bottom:0;left:0;width:0;background:linear-gradient(90deg,#ee73d1,#69d8f8);pointer-events:none;box-shadow:0 0 7px #d45be8}.timeline input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.transport{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px}.transport-left{display:flex;align-items:center;gap:11px}.transport-button{border:0;background:transparent;color:#aeb3c9;width:25px;height:30px;display:grid;place-items:center;padding:3px}.transport-button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5}.transport-button#restart svg{fill:currentColor;stroke:none}.play-button{height:41px;width:41px;border:0;background:linear-gradient(130deg,#db68c1,#8559f4);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 25px #dc64d94d}.play-button svg{height:22px;width:22px;fill:#fff}.transport-right{display:flex;align-items:center;gap:12px}.transport-hint{font:700 9px 'Space Grotesk';color:#788199;letter-spacing:.09em}.rate-pill{padding:5px 7px;border:1px solid #3a3c52;border-radius:5px;font:700 9px 'Space Grotesk';color:#a5abc6}
+.aspect-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.aspect{height:84px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid #2b2d3f;border-radius:10px;background:#111423}.aspect.selected{border-color:#8e5799;background:#251b32}.aspect-icon{display:block;border:1.5px solid #75788d;border-radius:2px}.aspect.selected .aspect-icon{border-color:#e489df}.aspect-icon.portrait{width:15px;height:25px}.aspect-icon.landscape{width:27px;height:16px}.aspect-icon.square{width:20px;height:20px}.aspect b{font:700 11px 'Space Grotesk'}.aspect small{font:600 8px 'Space Grotesk';letter-spacing:.08em;color:#6f7790}.meter-item{margin-bottom:19px}.meter-head{display:flex;justify-content:space-between;margin-bottom:9px;color:#b2b6cc;font:700 11px 'Space Grotesk'}.meter-head small{font-size:9px;margin-left:5px;color:#666d83}.meter-head>span:last-child{color:#8d98af}.meter-track{background:#25283a;height:5px;border-radius:4px;overflow:hidden}.meter-fill{height:100%;width:0;transition:width .07s;border-radius:4px}.meter-fill.bass{background:linear-gradient(90deg,#d55ec6,#fb75b4)}.meter-fill.mid{background:linear-gradient(90deg,#745bf2,#bd7df0)}.meter-fill.treble{background:linear-gradient(90deg,#267abf,#57dced)}.beat-row{display:flex;align-items:center;font:700 9px 'Space Grotesk';color:#747e97;letter-spacing:.05em;gap:8px}.beat-pip{height:7px;width:7px;border-radius:50%;background:#45485f;transition:background .07s,box-shadow .07s}.beat-pip.active{background:#fe85d4;box-shadow:0 0 12px #fd74d7}.beat-row b{margin-left:auto;font-size:10px;color:#b6bdd2;letter-spacing:0}
+.select-label{display:block;color:#999fb7;font-size:10px;margin:17px 0 8px}.dark-select{background:#141827;border:1px solid #343549;border-radius:8px;color:#e4e5fb;width:100%;height:39px;padding:0 10px;font-size:11px}.dark-select option{background:#141827}.render-button{display:flex;align-items:center;justify-content:center;width:100%;height:45px;background:linear-gradient(112deg,#d956ac,#8656f4);box-shadow:0 6px 25px #b351ca29;border:none;border-radius:8px;font:800 11px 'Space Grotesk';letter-spacing:.14em;gap:9px;margin-top:20px}.render-button:hover:not(:disabled){filter:brightness(1.15)}.render-button svg{height:16px;width:16px;stroke-width:1.6}.export-note{font-size:9px;color:#777e97;line-height:1.65;text-align:center;margin:12px 0 0}.export-progress{height:4px;border-radius:3px;background:#34354c;overflow:hidden;margin-top:11px}.export-progress>div{width:0;height:100%;background:linear-gradient(90deg,#e674d0,#62d7ff);transition:width .2s}.info-section{display:flex;align-items:flex-start;gap:10px;margin-top:22px;background:linear-gradient(135deg,#181529,#101729);border:1px solid #3e3654;border-radius:11px;padding:14px 11px}.info-icon{color:#e589e9;font-size:20px}.info-section strong{font:700 10px 'Space Grotesk';letter-spacing:.08em}.info-section p{font-size:10px;line-height:1.7;color:#8791b0;margin:6px 0 0}.footer{font:700 9px 'Space Grotesk';letter-spacing:.09em;color:#636a80;height:39px;display:flex;justify-content:space-between;align-items:center;padding:0 29px;border-top:1px solid #27293a}.footer strong{color:#8991aa}.footer-dot{margin:0 8px}
+dialog{color:#e9eaf8;background:#161625;border:1px solid #604374;border-radius:16px;max-width:min(430px,calc(100vw - 32px));box-shadow:0 30px 100px #000b;padding:0}dialog::backdrop{background:#03040ac9;backdrop-filter:blur(4px)}.dialog-inner{padding:28px;position:relative}.dialog-close{position:absolute;top:13px;right:18px;font-size:25px;background:none;border:0}.dialog-inner h2{font:600 26px 'Space Grotesk';margin:13px 0 17px}.dialog-inner ol{font-size:12px;line-height:2.2;padding-left:20px;color:#b5bad0}.dialog-inner p{color:#9ea4ba;font-size:11px;line-height:1.8}.dialog-primary{border:none;border-radius:8px;padding:12px 28px;color:#fff;font-weight:700;background:linear-gradient(110deg,#d758bb,#7b62e8);margin-top:12px}
+@media(max-width:1190px){.workspace{grid-template-columns:260px minmax(280px,1fr) 252px}.sidebar,.rightbar{padding-left:16px;padding-right:16px}.main-panel{padding-left:14px;padding-right:14px}.topbar{padding:0 19px}}
+@media(max-width:930px){.workspace{grid-template-columns:minmax(250px,1fr) minmax(340px,1.4fr)}.rightbar{grid-column:1/-1;border-left:0;border-top:1px solid #282b3c;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.right-section{padding:6px 0;border-bottom:0}.info-section{grid-column:1/-1;margin-top:0}.main-panel{padding:23px 20px}.stage-frame{max-height:65vh}}
+@media(max-width:680px){.topbar{height:61px;padding:0 16px}.brand{font-size:20px}.brand-logo{width:28px;height:28px}.topbar-center{display:none}.system-status{font-size:9px}.help-btn{margin-left:5px}.workspace{display:flex;flex-direction:column}.main-panel{order:0;padding:21px 15px 23px}.sidebar{order:1;border-right:0;border-top:1px solid #272a3a;padding:19px 21px}.rightbar{order:2;display:block;padding:8px 21px 22px}.side-header{display:none}.stage-top h2{font-size:17px}.stage-top-meta{font-size:8px}.stage-shell{min-height:220px;padding:18px 0}.stage-frame{width:min(100%,390px);max-height:65vh}.stage-frame.ratio-landscape{width:100%}.stage-frame.ratio-square{width:min(100%,420px)}.panel{padding:17px 0}.right-section{padding:21px 0;border-bottom:1px solid #292b3c}.info-section{margin-top:21px}.footer{padding:0 16px;height:auto;min-height:42px;gap:6px;flex-wrap:wrap;font-size:7px}.player{padding:12px}.stage-bottom-caption{font-size:6px}.system-dot{height:6px;width:6px}.dropzone{min-height:135px}}
+@media(max-width:410px){.stage-top h2 span{display:none}.stage-shell{padding:14px 0}.stage-frame{max-height:58vh}.transport-hint{font-size:8px}.stage-top-meta{font-size:7px}.footer span:last-child{display:none}}
+/* Keep the preview's true output aspect instead of stretching when viewport height is limited. */
+.stage-frame{width:min(100%,390px,calc(68vh * 9 / 16));max-height:none}
+.stage-frame.ratio-landscape{width:min(100%,840px,calc(68vh * 16 / 9))}
+.stage-frame.ratio-square{width:min(100%,560px,68vh)}
+@media(max-width:930px){.stage-frame{width:min(100%,390px,calc(65vh * 9 / 16))}}
+@media(max-width:680px){
+ .stage-frame{width:min(100%,390px,calc(65vh * 9 / 16))}
+ .stage-frame.ratio-landscape{width:min(100%,calc(65vh * 16 / 9))}
+ .stage-frame.ratio-square{width:min(100%,420px,65vh)}
+}
+@media(max-width:410px){.stage-frame{width:min(100%,calc(58vh * 9 / 16))}}
+
+/* Accessible, explicit iOS file save action. */
+.save-result{display:block;width:100%;min-height:50px;margin-top:12px;padding:11px;border:1px solid #65dcea;background:linear-gradient(110deg,#12526b,#402b6a);color:white;border-radius:10px;font-weight:800;letter-spacing:.02em;box-shadow:0 0 24px #3896db40}
+.save-result:active{transform:scale(.99)}
+@supports(padding:env(safe-area-inset-bottom)){.footer{padding-bottom:max(8px,env(safe-area-inset-bottom))}}
+@media(max-width:680px){.dropzone,.play-button,.render-button,.save-result{touch-action:manipulation}.dark-select{min-height:44px;font-size:13px}}
+
+</style>
 </head>
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <a class="brand" href="./" aria-label="Lumen Studio ホーム"><span class="brand-logo"><span></span></span><span>LUMEN<small>STUDIO</small></span></a>
-      <div class="topbar-center"><span class="top-separator"></span><span class="project-name">NEON SPECTRUM</span><span class="version-chip">V1.0</span></div>
+      <a class="brand" href="#" aria-label="Lumen Studio ホーム"><span class="brand-logo"><span></span></span><span>LUMEN<small>STUDIO</small></span></a>
+      <div class="topbar-center"><span class="top-separator"></span><span class="project-name">NEON SPECTRUM</span><span class="version-chip">V1.1 iOS</span></div>
       <div class="top-actions"><span class="system-dot"></span><span class="system-status" id="system-status">WEBGL CHECK</span><button class="help-btn" id="help-button" aria-label="使い方" title="使い方">?</button></div>
     </header>
 
@@ -73,7 +114,7 @@
 
         <section class="right-section"><div class="panel-title"><span class="panel-index">05</span> AUDIO RESPONSE <span class="panel-subtitle">音響</span></div><div class="meter-item"><div class="meter-head"><span>BASS <small>LOW</small></span><span id="bass-value">0%</span></div><div class="meter-track"><div id="bass-meter" class="meter-fill bass"></div></div></div><div class="meter-item"><div class="meter-head"><span>MID <small>MELODY</small></span><span id="mid-value">0%</span></div><div class="meter-track"><div id="mid-meter" class="meter-fill mid"></div></div></div><div class="meter-item"><div class="meter-head"><span>TREBLE <small>HIGH</small></span><span id="treble-value">0%</span></div><div class="meter-track"><div id="treble-meter" class="meter-fill treble"></div></div></div><div class="beat-row"><span class="beat-pip" id="beat-pip"></span><span>BEAT DETECTION</span><b id="bpm-value">— BPM</b></div></section>
 
-        <section class="right-section export-section"><div class="panel-title"><span class="panel-index">06</span> RENDER & EXPORT <span class="panel-subtitle">保存</span></div><label for="render-size" class="select-label">書き出し解像度</label><select id="render-size" class="dark-select"><option value="720">HD — 720p</option><option value="1080" selected>FULL HD — 1080p</option><option value="2160">4K — 2160p (高負荷)</option></select><label for="render-duration" class="select-label">映像の長さ</label><select id="render-duration" class="dark-select"><option value="15">15 seconds</option><option value="30" selected>30 seconds</option><option value="60">60 seconds</option><option value="full">FULL TRACK</option></select><label for="render-fps" class="select-label">フレームレート</label><select id="render-fps" class="dark-select"><option value="30" selected>30 FPS</option><option value="60">60 FPS</option></select><button class="render-button" id="export-button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg><span id="export-label">EXPORT VIDEO</span></button><div class="export-progress hidden" id="export-progress"><div id="export-progress-bar"></div></div><p class="export-note" id="export-note">MP4対応ブラウザではMP4、その他ではWebM形式で保存されます。</p></section>
+        <section class="right-section export-section"><div class="panel-title"><span class="panel-index">06</span> RENDER & EXPORT <span class="panel-subtitle">保存</span></div><label for="render-size" class="select-label">書き出し解像度</label><select id="render-size" class="dark-select"><option value="720">HD — 720p</option><option value="1080" selected>FULL HD — 1080p</option><option value="2160">4K — 2160p (高負荷)</option></select><label for="render-duration" class="select-label">映像の長さ</label><select id="render-duration" class="dark-select"><option value="15">15 seconds</option><option value="30" selected>30 seconds</option><option value="60">60 seconds</option><option value="full">FULL TRACK</option></select><label for="render-fps" class="select-label">フレームレート</label><select id="render-fps" class="dark-select"><option value="30" selected>30 FPS</option><option value="60">60 FPS</option></select><button class="render-button" id="export-button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg><span id="export-label">EXPORT VIDEO</span></button><div class="export-progress hidden" id="export-progress"><div id="export-progress-bar"></div></div><button type="button" class="save-result hidden" id="save-result">録画した動画を保存・共有する</button><p class="export-note" id="export-note">MP4対応ブラウザではMP4、その他ではWebM形式で保存されます。</p></section>
 
         <section class="info-section"><div class="info-icon">✦</div><div><strong>100% PROCEDURAL</strong><p>プリレンダ素材ではなく、すべてをGPUでその場で描画。字幕・ロゴのない映像が書き出されます。</p></div></section>
       </aside>
@@ -81,7 +122,866 @@
     <footer class="footer"><span>© LUMEN STUDIO · AUDIO → ART</span><span>RENDER ENGINE <strong>WEBGL 2.0</strong><span class="footer-dot">·</span><strong>LOCAL PROCESSING</strong></span></footer>
   </div>
   <audio id="audio" preload="metadata"></audio>
-  <dialog id="help-dialog"><div class="dialog-inner"><button class="dialog-close" id="help-close" aria-label="閉じる">×</button><span class="eyebrow">QUICK START</span><h2>LUMENの使い方</h2><ol><li>左のパネルからMP3・WAV・M4Aなどの音楽を追加します。</li><li>再生すると低音・中音・高音に合わせて3D映像が反応します。</li><li>色・発光・粒子・縦横比を調整します。</li><li>長さと解像度を選び「EXPORT VIDEO」で音声付き動画を保存します。</li></ol><p>書き出しはリアルタイム収録です。高解像度ほど端末の性能を必要とします。スマホでは720pからお試しください。</p><button class="dialog-primary" id="help-ok">始める</button></div></dialog>
-  <script type="module" src="src/main.js"></script>
+  <dialog id="help-dialog"><div class="dialog-inner"><button class="dialog-close" id="help-close" aria-label="閉じる">×</button><span class="eyebrow">QUICK START</span><h2>LUMENの使い方</h2><ol><li>左のパネルからMP3・WAV・M4Aなどの音楽を追加します。</li><li>再生すると低音・中音・高音に合わせて3D映像が反応します。</li><li>色・発光・粒子・縦横比を調整します。</li><li>長さと解像度を選び「EXPORT VIDEO」で録画します。録画終了後、「動画を保存・共有する」をタップしてiPhoneに保存します。</li></ol><p>書き出しはリアルタイム収録です。高解像度ほど端末の性能を必要とします。スマホでは720pからお試しください。</p><button class="dialog-primary" id="help-ok">始める</button></div></dialog>
+  <script>
+// shaders
+// Self-contained WebGL 2 shaders. No presets, footage, or textures are downloaded.
+const fullscreenVertex = `#version 300 es
+precision highp float;
+const vec2 P[3] = vec2[3](vec2(-1.,-1.), vec2(3.,-1.), vec2(-1.,3.));
+out vec2 vUV;
+void main(){vec2 p=P[gl_VertexID];vUV=p*.5+.5;gl_Position=vec4(p,0.,1.);}
+`;
+
+const visualFragment = `#version 300 es
+precision highp float;
+#define PI 3.141592653589793
+#define TAU 6.283185307179586
+in vec2 vUV;
+out vec4 fragColor;
+uniform vec2 uResolution;
+uniform float uTime;
+uniform float uBass;
+uniform float uMid;
+uniform float uTreble;
+uniform float uBeat;
+uniform float uLoudness;
+uniform float uIntensity;
+uniform float uGlow;
+uniform float uEnergy;
+uniform float uMovement;
+uniform vec3 uColorA;
+uniform vec3 uColorB;
+uniform vec3 uColorC;
+uniform float uSpectrum[64];
+
+float hash21(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash21(i),hash21(i+vec2(1,0)),f.x),mix(hash21(i+vec2(0,1)),hash21(i+vec2(1,1)),f.x),f.y);}
+float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<4;i++){v+=a*noise(p);p=p*2.03+vec2(8.2,3.7);a*=.5;}return v;}
+float stroke(float dist,float thick){return 1.-smoothstep(thick,thick+fwidth(dist)*1.5,abs(dist));}
+float glow(float d,float power){return exp(-max(0.,abs(d))*power);}
+vec3 palette(float t){return mix(uColorA,uColorB,clamp(t,0.,1.));}
+void main(){
+  vec2 resolution = max(uResolution,vec2(1.));
+  float unit=min(resolution.x,resolution.y);
+  vec2 p=(gl_FragCoord.xy-.5*resolution)/unit;
+  float t=uTime;
+  float audio=clamp(uLoudness*uIntensity,0.,2.);
+  float energy=clamp(uEnergy,0.,1.);
+  // Slow camera drift is damped to protect the composition and keep UI-free export stable.
+  p.x += .015*sin(t*.17)*uMovement*(.65+energy*.65);
+  p.y += .012*cos(t*.13)*uMovement*(.65+energy*.65);
+  vec2 q=p*2.;
+  float r=length(p),ang=atan(p.y,p.x);
+  float n=fbm(q*1.75+vec2(t*.026,-t*.019));
+  float cloud=fbm(q*3.9+vec2(-t*.065,t*.035));
+  float violet=(1.-smoothstep(.0,1.65,length(q)))*(.35+cloud*.65);
+  vec3 col=vec3(.006,.008,.025);
+  col+=mix(uColorA,uColorB,.5)*violet*.16;
+  col+=uColorC*pow(max(0.,n-.38),2.6)*.16;
+  // Deep-space dust, projected as tiny points on two spatial layers.
+  for(int j=0;j<2;j++){
+    float cell=j==0?67.:111.;
+    vec2 st=q*cell+vec2(float(j)*83.,float(j)*39.);
+    vec2 id=floor(st),local=fract(st)-.5;
+    float seed=hash21(id);
+    vec2 center=vec2(hash21(id+17.3),hash21(id+57.9))-.5;
+    float dd=length(local-center*.76);
+    float star=1.-smoothstep(.005,.023,dd);
+    float twinkle=.68+.32*sin(t*(.6+seed*2.)+seed*45.);
+    col+=mix(uColorB,vec3(.92,.96,1.),seed)*star*step(.981,seed)*twinkle*.42;
+  }
+  // Faint, concentric, offset orbital paths around the heart of the visual.
+  vec2 tilt1=vec2(p.x, p.y*.76+p.x*.31);
+  vec2 tilt2=vec2(p.x*.87-p.y*.18,p.y*.86+p.x*.12);
+  float orbit1=length(tilt1)-.34;
+  float orbit2=length(tilt2)-.302;
+  col+=uColorA*stroke(orbit1,.0008)*.24;
+  col+=uColorB*stroke(orbit2,.0013)*.20;
+  col+=uColorA*glow(orbit1,25.)*.035*uGlow;
+  col+=uColorB*glow(orbit2,30.)*.035*uGlow;
+  // Neon spectrum: each angular sector samples its own frequency band.
+  float wrapped=fract((ang+PI)/TAU);
+  float sector=wrapped*64.;
+  int bandIndex=clamp(int(floor(sector)),0,63);
+  float b=clamp(uSpectrum[bandIndex],0.,1.);
+  // Add a subtle musical envelope to the frequency spectrum.
+  float radialStart=.352;
+  float radialEnd=radialStart+.028+(.035+.135*b)*uIntensity*(.78+energy*.36);
+  float edge=fract(sector);
+  float slit=smoothstep(.12,.21,edge)*(1.-smoothstep(.78,.88,edge));
+  float bar=(smoothstep(radialStart-.006,radialStart+.002,r)-smoothstep(radialEnd-.006,radialEnd+.004,r))*slit;
+  vec3 barColor=palette(.5+.48*sin(ang*1.7+t*.16));
+  col+=barColor*bar*(.87+audio*.9);
+  // Analytic glow eliminates the need for multiple expensive blur passes on phones.
+  float nearBar=smoothstep(radialStart-.08,radialStart+.01,r)*(1.-smoothstep(radialEnd-.025,radialEnd+.12,r));
+  col+=barColor*nearBar*slit*.16*uGlow*(.6+b*.7);
+  float innerRing=stroke(r-.337,.0018);
+  float outerRing=stroke(r-.352,.0018);
+  col+=uColorA*innerRing*.48+uColorB*outerRing*.58;
+  col+=palette(.5+.5*sin(ang+t*.22))*(glow(r-.337,45.)*.065+glow(r-.352,37.)*.07)*uGlow;
+  // Liquid iridescent sphere. Procedural plasma lines rotate independently.
+  float coreRadius=.226+sin(ang*7.+t*.85)*.0018+.009*audio;
+  float coreMask=1.-smoothstep(coreRadius-.003,coreRadius+.004,r);
+  float depth=sqrt(max(.0,1.-pow(r/max(.001,coreRadius),2.)));
+  float spin=ang*2.8 + t*(.22+uMid*.20) + fbm(p*7.+vec2(t*.11,-t*.08))*1.35;
+  float swirls=sin(spin*3.3-r*55.+noise(p*15.+t*.21)*3.1);
+  float brightFilaments=pow(max(0.,swirls),7.)*.8;
+  float secondary=pow(max(0.,sin(spin*5.4+r*44.)),14.)*.47;
+  float plasma=fbm(vec2(ang*3.0+t*.12, r*15.-t*.26));
+  vec3 inside=mix(vec3(.018,.018,.055),uColorA*.26,clamp(plasma*.9+.17,0.,1.));
+  inside+=uColorB*(brightFilaments*.55+secondary*.5)*(.28+.65*depth);
+  inside+=uColorC*pow(max(0.,plasma-.46),2.2)*.65;
+  float fresnel=pow(1.-depth,2.5);
+  inside+=mix(uColorA,uColorB,.5+.5*sin(ang*2.2+t*.37))*fresnel*(.45+.45*audio);
+  // Central silhouette, giving the spherical form dimensional depth.
+  inside*=.58+.4*smoothstep(-.35,.8,p.y/coreRadius)+depth*.12;
+  col=mix(col,inside,coreMask);
+  // Border glow and aurora rim.
+  float rim=stroke(r-coreRadius,.003);
+  col+=palette(.5+.5*sin(ang*2.4+t*.19))*rim*(.45+uBass*.75);
+  col+=palette(.5+.5*cos(ang*2.))*glow(r-coreRadius,29.)*.13*uGlow*(1.+audio*.7);
+  // Refraction-like bright arc across the upper right of the orb.
+  float arc=stroke(r-.244,.0016)*smoothstep(-.5,.8,sin(ang*1.25+.8));
+  col+=uColorB*arc*.31;
+  // Deep halo, scattered rays, and bass-driven corona.
+  float halo=exp(-r*5.6)*(.12+.38*audio)*(.72+energy*.55);
+  col+=uColorA*halo*.23;
+  float spokes=pow(abs(sin(ang*13.5+t*.12)),60.)*exp(-r*2.8);
+  col+=uColorB*spokes*.10*(.3+uTreble*2.)*(.8+energy*.4);
+  // Expanding rings follow detected beats.
+  float waveRadius=.33+(1.-uBeat)*.49;
+  float wave=glow(r-waveRadius,105.)*uBeat;
+  col+=mix(uColorA,uColorB,.55)*wave*.52*uGlow;
+  float localGlow=glow(r-waveRadius,21.)*uBeat;
+  col+=uColorA*localGlow*.042;
+  // Warm highlight at the center, to keep the core visually anchored.
+  float coreSpark=exp(-dot(p,p)*830.)*(.07+uMid*.22);
+  col+=uColorB*coreSpark;
+  // Compress highlights while preserving saturated glow.
+  col=max(col,vec3(0.));
+  col=1.-exp(-col*(1.05+.25*uGlow));
+  col=pow(col,vec3(.89));
+  float vignette=1.-smoothstep(.62,1.42,length(q));
+  col*=.72+.28*vignette;
+  fragColor=vec4(col,1.);
+}
+`;
+
+const particlesVertex = `#version 300 es
+precision highp float;
+uniform vec2 uResolution;
+uniform float uTime;
+uniform float uBass;
+uniform float uTreble;
+uniform float uBeat;
+uniform float uDensity;
+uniform float uMovement;
+out float vShade;
+out float vDepth;
+float hash(float p){return fract(sin(p*127.1+19.9)*43758.5453);}
+void main(){
+ float id=float(gl_VertexID);
+ float seed=hash(id+2.);
+ float size=hash(id+9.);
+ if(seed>uDensity){gl_Position=vec4(3.,3.,1.,1.);gl_PointSize=1.;vShade=0.;vDepth=0.;return;}
+ float theta=id*2.3999632+uTime*(.03+hash(id+5.)*.11)*uMovement;
+ float radius=.20+pow(hash(id+14.),.72)*1.05;
+ float spiral=radius*3.1+theta;
+ vec2 pos=vec2(cos(spiral),sin(spiral))*radius;
+ pos+=vec2(sin(id*.143+uTime*.09),cos(id*.091+uTime*.08))*.013;
+ pos*=1.+uBass*.045;
+ float pixelRatio=2.*min(uResolution.x,uResolution.y)/uResolution.x;
+ gl_Position=vec4(pos.x*pixelRatio,pos.y*2.*min(uResolution.x,uResolution.y)/uResolution.y,0.,1.);
+ float pSize=(.7+pow(size,5.)*2.9)*(min(uResolution.x,uResolution.y)/750.);
+ gl_PointSize=clamp(pSize,1.,7.);
+ vShade=seed;
+ vDepth=clamp(1.-radius*.75,0.,1.);
+}
+`;
+const particlesFragment = `#version 300 es
+precision highp float;
+in float vShade;in float vDepth;out vec4 fragColor;
+uniform vec3 uColorA;uniform vec3 uColorB;uniform float uTreble;uniform float uGlow;
+void main(){float d=length(gl_PointCoord-.5)*2.;float a=(1.-smoothstep(.1,1.,d));a*=a;vec3 c=mix(uColorA,uColorB,vShade)*(.45+uTreble*.65);fragColor=vec4(c,a*vDepth*.7*uGlow);}
+`;
+
+
+// renderer
+
+function compile(gl, kind, code) {
+  const shader = gl.createShader(kind);
+  gl.shaderSource(shader, code);
+  gl.compileShader(shader);
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    const message = gl.getShaderInfoLog(shader);
+    gl.deleteShader(shader);
+    throw new Error(`WebGL shader: ${message}`);
+  }
+  return shader;
+}
+function program(gl, vsSource, fsSource) {
+  const p = gl.createProgram();
+  const vs = compile(gl, gl.VERTEX_SHADER, vsSource);
+  const fs = compile(gl, gl.FRAGMENT_SHADER, fsSource);
+  gl.attachShader(p, vs);
+  gl.attachShader(p, fs);
+  gl.linkProgram(p);
+  gl.deleteShader(vs);
+  gl.deleteShader(fs);
+  if (!gl.getProgramParameter(p, gl.LINK_STATUS)) {
+    const message = gl.getProgramInfoLog(p);
+    gl.deleteProgram(p);
+    throw new Error(`WebGL link: ${message}`);
+  }
+  return p;
+}
+
+const COLORS = {
+  aurora: [[1, .14, .61], [.20, .78, 1], [.41, .25, .95]],
+  ember:  [[1, .29, .16], [1, .69, .20], [.78, .15, .65]],
+  glacier:[[.10, .59, 1], [.42, .97, 1], [.49, .38, 1]],
+};
+
+class VisualRenderer {
+  constructor(canvas, frame, getAudio, onFrame) {
+    this.canvas = canvas;
+    this.frame = frame;
+    this.getAudio = getAudio;
+    this.onFrame = onFrame;
+    this.settings = { palette: 'aurora', intensity: .75, glow: .8, particles: .7, aspect: '9:16', movement: 1 };
+    this.exportSize = null;
+    this.lastFrame = performance.now();
+    this.elapsed = 0;
+    this.lastUpdate = 0;
+    this.fps = 60;
+    const gl = canvas.getContext('webgl2', { alpha: false, antialias: false, preserveDrawingBuffer: false, powerPreference: 'high-performance' });
+    if (!gl) throw new Error('このブラウザは WebGL 2.0 に対応していません。');
+    this.gl = gl;
+    this.visual = program(gl, fullscreenVertex, visualFragment);
+    this.particles = program(gl, particlesVertex, particlesFragment);
+    this.vao = gl.createVertexArray();
+    gl.bindVertexArray(this.vao);
+    this.uniforms = new Map();
+    for (const [name, p] of [['visual', this.visual], ['particles', this.particles]]) {
+      const locations = {};
+      for (const key of ['uResolution','uTime','uBass','uMid','uTreble','uBeat','uLoudness','uIntensity','uGlow','uEnergy','uMovement','uColorA','uColorB','uColorC','uSpectrum[0]','uDensity']) {
+        locations[key] = gl.getUniformLocation(p, key);
+      }
+      this.uniforms.set(name, locations);
+    }
+    this.observer = new ResizeObserver(() => this.resize());
+    this.observer.observe(frame);
+    this.resize();
+    this._tick = this._tick.bind(this);
+    this.raf = requestAnimationFrame(this._tick);
+  }
+
+  setOptions(options) {
+    Object.assign(this.settings, options);
+    if ('aspect' in options) this.resize();
+  }
+  setFPS(fps) { this.fps = fps; }
+  setExportSize(size) { this.exportSize = size; this.resize(); }
+  resize() {
+    if (!this.gl) return;
+    let w, h;
+    if (this.exportSize) {
+      ({ width: w, height: h } = this.exportSize);
+    } else {
+      const rect = this.frame.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 1.8);
+      w = Math.round(Math.max(rect.width, 200) * dpr);
+      h = Math.round(Math.max(rect.height, 200) * dpr);
+      const max = 1600;
+      const factor = Math.min(1, max / Math.max(w, h));
+      w = Math.round(w * factor); h = Math.round(h * factor);
+    }
+    w = Math.max(64, w); h = Math.max(64, h);
+    if (this.canvas.width !== w || this.canvas.height !== h) {
+      this.canvas.width = w;
+      this.canvas.height = h;
+    }
+    this.gl.viewport(0, 0, w, h);
+  }
+  _uniforms(p, key, a) {
+    const gl=this.gl, loc=this.uniforms.get(key);
+    gl.useProgram(p);
+    gl.uniform2f(loc.uResolution, this.canvas.width, this.canvas.height);
+    gl.uniform1f(loc.uTime, this.elapsed);
+    gl.uniform1f(loc.uBass, a.bass);
+    gl.uniform1f(loc.uMid, a.mid);
+    gl.uniform1f(loc.uTreble, a.treble);
+    gl.uniform1f(loc.uBeat, a.beat);
+    gl.uniform1f(loc.uLoudness, a.loudness);
+    gl.uniform1f(loc.uIntensity, this.settings.intensity);
+    gl.uniform1f(loc.uGlow, this.settings.glow);
+    gl.uniform1f(loc.uEnergy, a.energy);
+    gl.uniform1f(loc.uMovement, this.settings.movement);
+    const [c1,c2,c3] = COLORS[this.settings.palette] || COLORS.aurora;
+    gl.uniform3fv(loc.uColorA, c1);
+    gl.uniform3fv(loc.uColorB, c2);
+    if (loc.uColorC !== null) gl.uniform3fv(loc.uColorC, c3);
+    if (loc['uSpectrum[0]'] !== null) gl.uniform1fv(loc['uSpectrum[0]'], a.bands);
+    if (loc.uDensity !== null) gl.uniform1f(loc.uDensity, this.settings.particles);
+  }
+  _tick(now) {
+    this.raf = requestAnimationFrame(this._tick);
+    if (document.hidden) return;
+    const delta = now - this.lastFrame;
+    if (delta < (1000 / this.fps - 1)) return;
+    this.lastFrame = now;
+    this.elapsed += Math.min(delta, 80) / 1000;
+    const a = this.getAudio(Math.min(delta, 80) / 1000, this.elapsed);
+    const gl = this.gl;
+    gl.bindVertexArray(this.vao);
+    gl.disable(gl.BLEND);
+    gl.useProgram(this.visual);
+    this._uniforms(this.visual, 'visual', a);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    if (this.settings.particles > .02) {
+      gl.enable(gl.BLEND);
+      gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
+      this._uniforms(this.particles, 'particles', a);
+      gl.drawArrays(gl.POINTS, 0, 2100);
+      gl.disable(gl.BLEND);
+    }
+    if (now - this.lastUpdate > 100) {
+      this.lastUpdate = now;
+      this.onFrame(a);
+    }
+  }
+  dispose() {
+    cancelAnimationFrame(this.raf);
+    this.observer.disconnect();
+    this.gl.deleteProgram(this.visual);
+    this.gl.deleteProgram(this.particles);
+    this.gl.deleteVertexArray(this.vao);
+  }
+}
+
+
+// audio
+const clamp = (x, min=0, max=1) => Math.max(min, Math.min(max, x));
+const formatTime = secs => {
+  if (!Number.isFinite(secs)) return '00:00';
+  const s=Math.floor(Math.max(0,secs));
+  return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+};
+const createAudioContext = () => new (window.AudioContext || window.webkitAudioContext)();
+
+class AudioEngine {
+  constructor(element) {
+    this.element=element;
+    this.file=null;
+    this.url=null;
+    this.context=null;
+    this.analyser=null;
+    this.mediaOutput=null;
+    this.monitor=null;
+    this.muted=false;
+    this.spectrum=new Float32Array(64);
+    this.fft=new Uint8Array(1024);
+    this.energyAvg=.15;
+    this.lastBass=0;
+    this.lastBeat=-10;
+    this.beatPulse=0;
+    this.beatTimes=[];
+    this.bpm=null;
+    this.curve=null;
+    this.duration=0;
+    this.lastSample=null;
+  }
+  async activate() {
+    if (!this.context) {
+      this.context=createAudioContext();
+      this.analyser=this.context.createAnalyser();
+      this.analyser.fftSize=2048;
+      this.analyser.smoothingTimeConstant=.70;
+      this.mediaSource=this.context.createMediaElementSource(this.element);
+      this.monitor=this.context.createGain();
+      this.mediaOutput=this.context.createMediaStreamDestination();
+      this.mediaSource.connect(this.analyser);
+      this.analyser.connect(this.monitor);
+      this.monitor.connect(this.context.destination);
+      this.analyser.connect(this.mediaOutput);
+      this.monitor.gain.value=this.muted?0:1;
+    }
+    if (this.context.state!=='running') await this.context.resume();
+  }
+  async load(file) {
+    if (!file || !file.size) throw new Error('空の音楽ファイルは読み込めません。');
+    this.element.pause();
+    this.element.removeAttribute('src');
+    this.element.load();
+    if (this.url) URL.revokeObjectURL(this.url);
+    this.file=file;
+    this.url=URL.createObjectURL(file);
+    this.element.src=this.url;
+    this.element.load();
+    this.curve=null;
+    this.duration=0;
+    this.spectrum.fill(0);
+    this.energyAvg=.15;
+    this.beatTimes=[];
+    this.bpm=null;
+    this.lastBeat=-10;
+    this.beatPulse=0;
+    await new Promise((resolve, reject) => {
+      if (this.element.readyState>=1) return resolve();
+      const ok=()=>{cleanup();resolve();};
+      const fail=()=>{cleanup();reject(new Error('この音源はブラウザで再生できません。'));};
+      const cleanup=()=>{this.element.removeEventListener('loadedmetadata',ok);this.element.removeEventListener('error',fail);};
+      this.element.addEventListener('loadedmetadata',ok,{once:true});
+      this.element.addEventListener('error',fail,{once:true});
+    });
+    this.duration=this.element.duration;
+  }
+  remove() {
+    this.element.pause();
+    this.element.removeAttribute('src');
+    this.element.load();
+    if (this.url) URL.revokeObjectURL(this.url);
+    this.url=null;this.file=null;this.curve=null;this.duration=0;
+    this.spectrum.fill(0);this.bpm=null;this.beatTimes=[];
+  }
+  async play() {
+    if (!this.file) throw new Error('音楽ファイルを選択してください。');
+    // Start both requests in the original tap handler. In iOS Safari,
+    // calling play() only after an awaited AudioContext.resume() can lose the
+    // transient user activation required for audio playback.
+    const activation = this.activate();
+    const playback = this.element.play();
+    await Promise.all([activation, playback]);
+  }
+  pause() { this.element.pause(); }
+  setMute(value) {
+    this.muted=Boolean(value);
+    if (this.monitor) this.monitor.gain.value=this.muted?0:1;
+  }
+  setCurve(curve) { this.curve=curve; }
+  get recordingStream() { return this.mediaOutput?.stream || null; }
+  snapshot(dt, clock) {
+    this.beatPulse=Math.max(0,this.beatPulse-dt*2.4);
+    const playing=this.file && this.analyser && !this.element.paused;
+    if (!playing) {
+      // Idle motion is intentional ambient art; it is not represented as music analysis.
+      for (let i=0;i<64;i++) {
+        const gentle=.12+.05*Math.sin(clock*.8+i*.23)+.035*Math.sin(clock*1.7-i*.13);
+        this.spectrum[i]=clamp(gentle,0,.26);
+      }
+      return { bass: .08, mid:.07, treble:.06, beat:this.beatPulse*.3, energy:.25,
+        loudness:.09, bands:this.spectrum, bpm:this.bpm, playing:false };
+    }
+    this.analyser.getByteFrequencyData(this.fft);
+    const binHz=this.context.sampleRate/this.analyser.fftSize;
+    let bass=0,mid=0,treble=0,nb=0,nm=0,nt=0,sum=0;
+    for (let i=0;i<64;i++) {
+      const f1=30*Math.pow(18000/30,i/64);
+      const f2=30*Math.pow(18000/30,(i+1)/64);
+      const start=Math.max(1,Math.floor(f1/binHz));
+      const end=Math.min(this.fft.length-1,Math.max(start,Math.ceil(f2/binHz)));
+      let value=0,count=0;
+      for(let k=start;k<=end;k++){value+=this.fft[k];count++;}
+      const v=clamp(Math.pow((value/Math.max(1,count))/255,.8)*1.27);
+      this.spectrum[i]+=(v-this.spectrum[i])*.44;
+      sum+=v;
+      if(f1<160){bass+=v;nb++;}
+      else if(f1<2400){mid+=v;nm++;}
+      else {treble+=v;nt++;}
+    }
+    bass=clamp(bass/Math.max(1,nb)*1.35);
+    mid=clamp(mid/Math.max(1,nm)*1.17);
+    treble=clamp(treble/Math.max(1,nt)*1.16);
+    const loudness=clamp(sum/64*1.36);
+    const time=this.element.currentTime;
+    const movingAvg=this.energyAvg;
+    // Adaptive threshold and cooldown reduce false double triggering.
+    const onset=bass>Math.max(.16,movingAvg*1.27)&&bass>this.lastBass+.045;
+    if(onset && time-this.lastBeat>.23) {
+      if(this.lastBeat>=0 && time-this.lastBeat<1.25 && time-this.lastBeat>.27) {
+        this.beatTimes.push(time-this.lastBeat);
+        if(this.beatTimes.length>16)this.beatTimes.shift();
+      }
+      this.lastBeat=time;
+      this.beatPulse=1;
+      if(this.beatTimes.length>=4) {
+        const sorted=[...this.beatTimes].sort((a,b)=>a-b);
+        const median=sorted[Math.floor(sorted.length/2)];
+        let bpm=60/median;
+        while(bpm<85)bpm*=2;
+        while(bpm>180)bpm/=2;
+        this.bpm=Math.round(bpm);
+      }
+    }
+    this.energyAvg+=dt*Math.min(2,Math.max(.15,1.25))* (bass-this.energyAvg);
+    this.lastBass=bass;
+    const structure=this._trackEnergy(time);
+    return {bass,mid,treble,loudness,energy:structure,beat:this.beatPulse,bpm:this.bpm,bands:this.spectrum,playing:true};
+  }
+  _trackEnergy(time) {
+    if (!this.curve?.length || !this.duration) return .35;
+    const idx=clamp(time/this.duration)*(this.curve.length-1);
+    const i=Math.floor(idx), f=idx-i;
+    return (this.curve[i]??.35)*(1-f)+(this.curve[i+1]??.35)*f;
+  }
+}
+
+
+// track-analysis
+// Optional ahead-of-time overview for the timeline. The playback FFT remains real-time.
+// To protect iPhones, huge compressed files skip this step instead of consuming RAM.
+async function analyzeTrack(file) {
+  if (file.size > 40 * 1024 * 1024) return null;
+  const Context = window.AudioContext || window.webkitAudioContext;
+  if (!Context) return null;
+  const context=new Context();
+  try {
+    const data=await file.arrayBuffer();
+    const decoded=await context.decodeAudioData(data);
+    if (decoded.duration>900) return null;
+    const left=decoded.getChannelData(0);
+    const right=decoded.numberOfChannels>1?decoded.getChannelData(1):left;
+    const buckets=360;
+    const envelope=new Float32Array(buckets);
+    for(let i=0;i<buckets;i++){
+      const start=Math.floor(left.length*i/buckets);
+      const end=Math.floor(left.length*(i+1)/buckets);
+      const stride=Math.max(1,Math.floor((end-start)/800));
+      let energy=0,count=0;
+      for(let j=start;j<end;j+=stride){const x=(left[j]+right[j])*.5;energy+=x*x;count++;}
+      envelope[i]=Math.sqrt(energy/Math.max(1,count));
+    }
+    const sorted=Array.from(envelope).sort((a,b)=>a-b);
+    const floor=sorted[Math.floor(sorted.length*.1)]||0;
+    const ceiling=sorted[Math.floor(sorted.length*.97)]||.2;
+    const spread=Math.max(.025,ceiling-floor);
+    const curve=Array.from(envelope,v=>Math.max(.04,Math.min(1,(v-floor)/spread)));
+    // A little temporal smoothing avoids abrupt jumps in the generative mood.
+    const smooth=curve.map((_,i)=>{
+      let sum=0,den=0;
+      for(let k=-3;k<=3;k++){const id=Math.min(curve.length-1,Math.max(0,i+k));const weight=4-Math.abs(k);sum+=curve[id]*weight;den+=weight;}
+      return sum/den;
+    });
+    return {waveform:curve,curve:smooth,duration:decoded.duration};
+  } finally { await context.close().catch(()=>{}); }
+}
+
+
+// exporter
+// The encoder is selected at runtime. Never put a .mp4 extension on WebM bytes.
+function pickMime() {
+  if (!window.MediaRecorder) return null;
+  const types=[
+    'video/mp4;codecs="avc1.42E01E,mp4a.40.2"',
+    'video/mp4',
+    'video/webm;codecs=vp9,opus',
+    'video/webm;codecs=vp8,opus',
+    'video/webm'
+  ];
+  return types.find(type=>MediaRecorder.isTypeSupported(type)) || null;
+}
+const availableExportType=()=>pickMime()?.startsWith('video/mp4')?'MP4':pickMime()?'WebM':null;
+function getDimensions(aspect, shortEdge) {
+  const x=Number(shortEdge);
+  if(aspect==='16:9')return {width:Math.round(x*16/9),height:x};
+  if(aspect==='1:1')return {width:x,height:x};
+  return {width:x,height:Math.round(x*16/9)};
+}
+class Exporter {
+  constructor(audio,renderer) {
+    this.audio=audio;this.renderer=renderer;this.isRecording=false;this.stop=null;
+  }
+  async record({aspect,size,duration,fps,onProgress,onStatus}) {
+    if(this.isRecording)throw new Error('すでに書き出し中です。');
+    if(!this.audio.file)throw new Error('音源を選択してください。');
+    if(!this.renderer.canvas.captureStream)throw new Error('このブラウザはCanvasの録画に対応していません。');
+    const mime=pickMime();
+    if(!mime)throw new Error('このブラウザはMP4/WebMの録画に対応していません。');
+    const dimensions=getDimensions(aspect,size);
+    const maxTime=duration==='full'?this.audio.duration:Math.min(Number(duration),this.audio.duration);
+    if(!Number.isFinite(maxTime)||maxTime<=0)throw new Error('音源の長さが取得できません。');
+    let wakeLock=null,videoStream=null,recorder=null,interval=null,ended=null,segments=[];
+    let cleaned=false;
+    const clean=async()=>{
+      if(cleaned)return;
+      cleaned=true;
+      if(interval!==null)clearInterval(interval);
+      if(ended)this.audio.element.removeEventListener('ended',ended);
+      this.audio.pause();
+      if(videoStream)videoStream.getVideoTracks().forEach(track=>track.stop());
+      this.renderer.setExportSize(null);
+      this.renderer.setFPS(60);
+      this.isRecording=false;
+      this.stop=null;
+      try{await wakeLock?.release();}catch{}
+    };
+    try{
+      await this.audio.activate();
+      this.audio.pause();
+      this.audio.element.currentTime=0;
+      this.renderer.setExportSize(dimensions);
+      this.renderer.setFPS(Number(fps));
+      // Camera and real-time WebAudio share one HTMLMediaElement timebase.
+      videoStream=this.renderer.canvas.captureStream(Number(fps));
+      const mix=new MediaStream([...videoStream.getVideoTracks(),...this.audio.recordingStream.getAudioTracks()]);
+      recorder=new MediaRecorder(mix,{mimeType:mime,videoBitsPerSecond:Number(size)>=2160?35000000:Number(size)>=1080?15000000:8000000,audioBitsPerSecond:192000});
+      recorder.ondataavailable=e=>{if(e.data.size>0)segments.push(e.data);};
+      if(navigator.wakeLock?.request)try{wakeLock=await navigator.wakeLock.request('screen');}catch{}
+      onStatus?.(`REC ${dimensions.width} × ${dimensions.height} · ${fps} FPS`);
+      this.isRecording=true;
+      const finish=new Promise((resolve,reject)=>{
+        recorder.onerror=e=>reject(new Error(e.error?.message||'録画に失敗しました。'));
+        recorder.onstop=()=>{
+          if(!segments.length)return reject(new Error('動画データを記録できませんでした。'));
+          const type=recorder.mimeType||mime;
+          const extension=type.toLowerCase().includes('mp4')?'mp4':'webm';
+          const blob=new Blob(segments,{type});
+          const filename=`LUMEN_NeonSpectrum_${aspect.replace(':','x')}_${size}p.${extension}`;
+          // Safari on iOS may reject a programmatic download after async recording.
+          // Keep the data available until the user taps the explicit save button.
+          resolve({bytes:blob.size,extension,blob,filename});
+        };
+      });
+      recorder.start(1000);
+      ended=()=>{if(recorder?.state==='recording')recorder.stop();};
+      this.audio.element.addEventListener('ended',ended);
+      this.stop=()=>{if(recorder?.state==='recording')recorder.stop();};
+      await this.audio.play();
+      interval=setInterval(()=>{
+        const current=this.audio.element.currentTime;
+        onProgress?.(Math.min(1,current/maxTime));
+        if(current>=maxTime-.055&&recorder?.state==='recording')recorder.stop();
+      },130);
+      return await finish;
+    } catch(error) {
+      if(recorder?.state==='recording')recorder.stop();
+      throw error;
+    } finally { await clean(); }
+  }
+}
+
+
+// main
+
+const $=id=>document.getElementById(id);
+const audio=new AudioEngine($('audio'));
+let renderer,exporter,analysis=null,loadingId=0,recording=false;
+let toastHandle;
+let exportedBlob=null, exportedFilename='', exportedUrl=null;
+const onIOS=/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+function resetExportLink(){
+  exportedBlob=null; exportedFilename='';
+  if(exportedUrl){URL.revokeObjectURL(exportedUrl);exportedUrl=null;}
+  $('save-result').classList.add('hidden');
+}
+
+const toast=message=>{
+  const el=$('stage-toast');el.textContent=message;el.classList.add('show');
+  clearTimeout(toastHandle);toastHandle=setTimeout(()=>el.classList.remove('show'),4000);
+};
+function status(message){$('player-status').textContent=message;}
+function fileLabel(file){return file.name.replace(/\.(mp3|wav|m4a|aac|ogg|flac)$/i,'');}
+
+try {
+  renderer=new VisualRenderer($('visualizer'),$('stage-frame'),(dt,t)=>audio.snapshot(dt,t),updateMeters);
+  exporter=new Exporter(audio,renderer);
+  $('system-status').textContent='WEBGL 2 READY';
+} catch(error) {
+  $('system-status').textContent='WEBGL UNAVAILABLE';
+  $('system-status').style.color='#ff9dbe';
+  toast(error.message);
+  console.error(error);
+}
+function updateMeters(s) {
+  for(const [key,value] of [['bass',s.bass],['mid',s.mid],['treble',s.treble]]) {
+    const amount=s.playing?Math.round(Math.min(1,value)*100):0;
+    $(`${key}-meter`).style.width=`${amount}%`;
+    $(`${key}-value`).textContent=`${amount}%`;
+  }
+  $('beat-pip').classList.toggle('active',s.playing&&s.beat>.7);
+  $('bpm-value').textContent=s.bpm?`${s.bpm} BPM`:'— BPM';
+  $('live-label').textContent=recording?'RENDERING':s.playing?'AUDIO REACTIVE':'DEMO MOTION';
+  if(audio.file) {
+    $('current-time').textContent=formatTime(audio.element.currentTime);
+    $('duration').textContent=formatTime(audio.element.duration);
+    const percent=audio.element.duration?audio.element.currentTime/audio.element.duration:0;
+    $('seek').value=String(Math.round(percent*1000));
+    $('timeline-played').style.width=`${percent*100}%`;
+  }
+}
+function applyUIHasFile(hasFile) {
+  $('play').disabled=!hasFile||recording;
+  $('export-button').disabled=!hasFile||!renderer;
+  $('seek').disabled=!hasFile||recording;
+  $('file-info').classList.toggle('hidden',!hasFile);
+  $('dropzone').classList.toggle('hidden',hasFile);
+  $('play-symbol').innerHTML='<path d="M8 5.5l10.5 6.5L8 18.5v-13z"/>';
+  $('play').setAttribute('aria-label','再生');
+  if(!hasFile){$('player-title').textContent='音源を読み込むと同期します';$('current-time').textContent='00:00';$('duration').textContent='00:00';$('timeline-played').style.width='0';status('READY FOR AUDIO');}
+  drawWaveform();
+}
+async function loadFile(file) {
+  if(recording) return;
+  resetExportLink();
+  const current=++loadingId;
+  try {
+    if(!file.type.startsWith('audio/')&&!/\.(mp3|wav|m4a|aac|ogg|flac)$/i.test(file.name))throw new Error('音楽ファイルを選択してください。');
+    status('LOADING AUDIO');
+    await audio.load(file);
+    if(current!==loadingId)return;
+    analysis=null;
+    $('file-input').value='';
+    $('track-name').textContent=file.name;
+    $('player-title').textContent=fileLabel(file);
+    $('track-meta').textContent=`${formatTime(audio.duration)} · ${(file.size/1024/1024).toFixed(1)} MB`;
+    applyUIHasFile(true);
+    status('AUDIO LOADED');
+    toast('音楽を読み込みました。再生して映像を同期してください。');
+    // Optional overview analysis never blocks playback.
+    analyzeTrack(file).then(result=>{
+      if(current!==loadingId||audio.file!==file)return;
+      analysis=result;
+      audio.setCurve(result?.curve||null);
+      drawWaveform();
+      if(result)status('ANALYSIS READY');
+    }).catch(error=>{if(current===loadingId){console.warn('Waveform analysis skipped',error);status('REALTIME ANALYSIS');}});
+  } catch(error) { if(current===loadingId){status('LOAD FAILED');toast(error.message);} }
+}
+$('file-input').addEventListener('change',e=>{const file=e.target.files?.[0];if(file)loadFile(file);});
+const drop=$('dropzone');
+drop.addEventListener('dragover',e=>{e.preventDefault();drop.classList.add('dragging');});
+drop.addEventListener('dragleave',()=>drop.classList.remove('dragging'));
+drop.addEventListener('drop',e=>{e.preventDefault();drop.classList.remove('dragging');if(e.dataTransfer.files?.[0])loadFile(e.dataTransfer.files[0]);});
+drop.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('file-input').click();}});
+$('remove-file').addEventListener('click',()=>{loadingId++;resetExportLink();audio.remove();analysis=null;applyUIHasFile(false);});
+$('play').addEventListener('click',async()=>{
+  try{
+    if(audio.element.paused){await audio.play();status('PLAYING');}
+    else{audio.pause();status('PAUSED');}
+  }catch(error){toast(error.message);}
+  syncPlay();
+});
+function syncPlay(){
+  const playing=!audio.element.paused;
+  $('play-symbol').innerHTML=playing?'<path d="M7 5h4v14H7zm6 0h4v14h-4z"/>':'<path d="M8 5.5l10.5 6.5L8 18.5v-13z"/>';
+  $('play').setAttribute('aria-label',playing?'一時停止':'再生');
+}
+audio.element.addEventListener('play',syncPlay);
+audio.element.addEventListener('pause',syncPlay);
+audio.element.addEventListener('ended',()=>{syncPlay();if(!recording)status('FINISHED');});
+$('restart').addEventListener('click',()=>{if(audio.file&&!recording)audio.element.currentTime=0;});
+$('seek').addEventListener('input',e=>{if(!recording&&audio.file&&audio.duration)audio.element.currentTime=audio.duration*Number(e.target.value)/1000;});
+$('mute').addEventListener('click',()=>{
+  audio.setMute(!audio.muted);
+  $('mute').style.color=audio.muted?'#e75d9e':'';
+  $('mute').setAttribute('aria-label',audio.muted?'ミュートを解除':'ミュート');
+});
+for(const button of document.querySelectorAll('[data-palette]'))button.addEventListener('click',()=>{
+  document.querySelectorAll('[data-palette]').forEach(el=>{el.classList.toggle('selected',el===button);el.setAttribute('aria-checked',String(el===button));});
+  renderer?.setOptions({palette:button.dataset.palette});
+});
+for(const [id,key] of [['intensity','intensity'],['glow','glow'],['particles','particles']]){
+  $(id).addEventListener('input',e=>{
+    const value=Number(e.target.value);
+    $(`${id}-value`).textContent=`${value}%`;
+    renderer?.setOptions({[key]:value/100});
+  });
+}
+for(const button of document.querySelectorAll('[data-aspect]'))button.addEventListener('click',()=>{
+  const aspect=button.dataset.aspect;
+  document.querySelectorAll('[data-aspect]').forEach(el=>{el.classList.toggle('selected',el===button);el.setAttribute('aria-pressed',String(el===button));});
+  $('stage-frame').className=`stage-frame ratio-${aspect==='16:9'?'landscape':aspect==='1:1'?'square':'portrait'}`;
+  renderer?.setOptions({aspect});
+  requestAnimationFrame(()=>renderer?.resize());
+});
+
+function drawWaveform(){
+  const canvas=$('waveform'),rect=canvas.getBoundingClientRect();
+  if(!rect.width)return;
+  const dpr=Math.min(2,window.devicePixelRatio||1);
+  canvas.width=Math.floor(rect.width*dpr);canvas.height=Math.floor(rect.height*dpr);
+  const ctx=canvas.getContext('2d');ctx.clearRect(0,0,canvas.width,canvas.height);
+  const data=analysis?.waveform;
+  const columns=Math.floor(rect.width/3),height=canvas.height;
+  for(let i=0;i<columns;i++){
+    const v=data?.[Math.floor(i/columns*data.length)]??(.16+Math.abs(Math.sin(i*.53)*Math.cos(i*.17))*.18);
+    const amplitude=(.17+v*.8)*height*.46;
+    const center=height*.5;
+    const gradient=ctx.createLinearGradient(0,center-amplitude,0,center+amplitude);
+    gradient.addColorStop(0,'#ac67b0');gradient.addColorStop(.5,'#653a88');gradient.addColorStop(1,'#328ca6');
+    ctx.fillStyle=gradient;
+    ctx.fillRect(i*3*dpr,center-amplitude,Math.max(1,1.5*dpr),amplitude*2);
+  }
+}
+new ResizeObserver(drawWaveform).observe($('waveform'));
+drawWaveform();
+
+$('export-note').textContent=availableExportType()?`書き出し形式: ${availableExportType()}（ブラウザ依存）。リアルタイム録画のため、端末負荷に影響されます。`:'このブラウザでは動画の書き出しに対応していません。';
+if(onIOS){
+  $('render-size').value='720';
+  $('render-fps').value='30';
+  $('export-note').textContent += ' iPhoneではまず720p・30FPSを推奨します。録画後に表示される保存ボタンを押してください。';
+}
+$('save-result').addEventListener('click',async()=>{
+  if(!exportedBlob)return;
+  // Must be initiated directly by the user's tap for iOS Safari Web Share API.
+  try {
+    const file=new File([exportedBlob],exportedFilename,{type:exportedBlob.type});
+    if(navigator.share&&navigator.canShare?.({files:[file]})) {
+      await navigator.share({files:[file],title:'LUMEN 動画'});
+      return;
+    }
+  } catch(error) {
+    if(error?.name==='AbortError') return;
+    console.warn('Share failed; falling back to download',error);
+  }
+  if(!exportedUrl)exportedUrl=URL.createObjectURL(exportedBlob);
+  const link=document.createElement('a');
+  link.href=exportedUrl;link.download=exportedFilename;
+  link.rel='noopener'; document.body.appendChild(link);link.click();link.remove();
+  if(onIOS)toast('保存されない場合は表示された動画を共有から「ファイルに保存」してください。');
+});
+$('export-button').addEventListener('click',async()=>{
+  if(recording){exporter?.stop?.();return;}
+  if(!exporter||!audio.file)return;
+  resetExportLink();
+  recording=true;
+  $('export-label').textContent='STOP RECORDING';
+  $('export-button').disabled=false;
+  $('play').disabled=true;
+  $('seek').disabled=true;
+  $('export-progress').classList.remove('hidden');
+  $('export-progress-bar').style.width='0%';
+  try {
+    const result=await exporter.record({
+      aspect:renderer.settings.aspect,
+      size:Number($('render-size').value),
+      duration:$('render-duration').value,
+      fps:Number($('render-fps').value),
+      onProgress:x=>{$('export-progress-bar').style.width=`${Math.round(x*100)}%`;},
+      onStatus:status
+    });
+    exportedBlob=result.blob;
+    exportedFilename=result.filename;
+    $('save-result').classList.remove('hidden');
+    toast(`録画が完了しました（${result.extension.toUpperCase()} · ${(result.bytes/1024/1024).toFixed(1)} MB）。下の保存ボタンを押してください。`);
+    status('READY TO SAVE');
+  }catch(error){toast(error.message);status('EXPORT FAILED');console.error(error);}
+  finally{
+    recording=false;
+    $('export-label').textContent='EXPORT VIDEO';
+    $('export-progress').classList.add('hidden');
+    applyUIHasFile(Boolean(audio.file));
+  }
+});
+
+const dialog=$('help-dialog');
+$('help-button').addEventListener('click',()=>dialog.showModal());
+$('help-close').addEventListener('click',()=>dialog.close());
+$('help-ok').addEventListener('click',()=>dialog.close());
+applyUIHasFile(false);
+
+</script>
 </body>
 </html>
